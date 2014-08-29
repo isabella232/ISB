@@ -74,4 +74,5 @@ dependencies[] = spark_demo
 
 ; Required modules (ISB)
 dependencies[] = features
+dependencies[] = isb_standard
 

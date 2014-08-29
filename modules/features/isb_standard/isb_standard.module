@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ISB Standard feature.
+ */
+
+include_once 'isb_standard.features.inc';
