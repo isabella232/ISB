@@ -20,7 +20,12 @@ projects[isb][download][type] = "git"
 projects[isb][download][url] = "https://github.com/datagovuk/ISB.git"
 projects[isb][download][branch] = "master"
 
-; Download the Spark install profile and recursively build all its dependencies:
+; Download the Spark install profile and recursively build all its dependencies
 projects[spark][type] = profile
 projects[spark][download][type] = git
 projects[spark][download][tag] = 7.x-1.0-beta1
+
+; Download additional contributed modules not included in Spark distro
+projects[features][version] = "2.0"
+projects[features][subdir] = "contrib"
+projects[features][patch][] = "http://raw.github.com/datagovuk/dgu_d7/master/patches/features_dont_convert_strings_to_integers.patch"

@@ -72,3 +72,6 @@ dependencies[] = navbar
 dependencies[] = responsive_preview
 dependencies[] = spark_demo
 
+; Required modules (ISB)
+dependencies[] = features
+
