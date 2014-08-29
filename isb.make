@@ -33,5 +33,8 @@ projects[features][patch][] = "http://raw.github.com/datagovuk/dgu_d7/master/pat
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"
 
+projects[diff][version] = "3.2"
+projects[diff][subdir] = "contrib"
+
 projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = "contrib"

@@ -75,6 +75,8 @@ dependencies[] = responsive_preview
 ; Required modules (ISB)
 dependencies[] = features
 dependencies[] = strongarm
+dependencies[] = diff
+
+; ISB features
 dependencies[] = isb_site_feature
 dependencies[] = isb_standard
-
