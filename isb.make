@@ -49,3 +49,6 @@ projects[pathauto][patch][] = "http://drupal.org/files/pathauto-persist-936222-1
 
 projects[rules][version] = "2.7"
 projects[rules][subdir] = "contrib"
+
+projects[rules_url_argument][version] = "1.2"
+projects[rules_url_argument][subdir] = "contrib"

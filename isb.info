@@ -79,6 +79,7 @@ dependencies[] = diff
 dependencies[] = lexicon
 dependencies[] = pathauto
 dependencies[] = rules
+dependencies[] = rules_url_argument
 
 ; ISB features
 dependencies[] = isb_site_feature
