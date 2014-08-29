@@ -81,6 +81,7 @@ dependencies[] = pathauto
 dependencies[] = rules
 dependencies[] = rules_url_argument
 dependencies[] = context
+dependencies[] = redirect
 
 ; ISB features
 dependencies[] = isb_site_feature

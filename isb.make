@@ -70,3 +70,7 @@ projects[fieldable_panels_panes][subdir] = "contrib"
 
 projects[context][version] = "3.2"
 projects[context][subdir] = "contrib"
+
+projects[redirect][version] = "1.0-rc1"
+projects[redirect][subdir] = "contrib"
+projects[redirect][patch][] = "http://raw.github.com/datagovuk/dgu_d7/master/patches/redirect_module_remove_oops_message.patch"
