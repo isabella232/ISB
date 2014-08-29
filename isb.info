@@ -1,0 +1,14 @@
+name = Information Standards Board
+description = The Information Standards Board (ISB) for Education, Skills and Children’s Services (ESCS) is the overarching authority and governing body for the management and assurance of data and information standards across the ESCS system.
+core = 7.x
+php = 5.3
+
+; The distribution_name property is used in the installer and other places as
+; a label for the software being installed.
+distribution_name = Information Standards Board
+
+base = spark
+
+; The exclusive flag auto-selects the profile during installation, if there
+; are no other exclusive ones.
+exclusive = TRUE
