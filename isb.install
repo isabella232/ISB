@@ -11,6 +11,9 @@
  *
  * @see system_install()
  */
-function isb_install() {
 
+require_once ("profiles/spark/spark.install");
+function isb_install() {
+  spark_install();
 }
+
