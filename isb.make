@@ -86,3 +86,6 @@ projects[flag][subdir] = "contrib"
 
 projects[emptyparagraphkiller][version] = "1.0-beta2"
 projects[emptyparagraphkiller][subdir] = "contrib"
+
+projects[smart_trim][version] = "1.4"
+projects[smart_trim][subdir] = "contrib"

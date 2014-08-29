@@ -84,6 +84,7 @@ dependencies[] = context
 dependencies[] = redirect
 dependencies[] = advuser
 dependencies[] = emptyparagraphkiller
+dependencies[] = smart_trim
 
 ; ISB features
 dependencies[] = isb_site_feature
