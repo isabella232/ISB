@@ -64,3 +64,6 @@ projects[conditional_fields][subdir] = "contrib"
 
 projects[stringoverrides][version] = "1.8"
 projects[stringoverrides][subdir] = "contrib"
+
+projects[fieldable_panels_panes][version] = "1.5"
+projects[fieldable_panels_panes][subdir] = "contrib"
