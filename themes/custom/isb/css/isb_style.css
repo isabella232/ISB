@@ -1,1 +1,33 @@
 /* ---------- ISB custom CSS ----------- */
+
+#site-name a {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#site-name a:focus,
+#site-name a:hover {
+    text-decoration: none;
+    text-shadow: 0 0 7px #7e91a3;
+}
+
+#logo {
+    padding: 15px 15px 20px 20px
+}
+
+#name-and-slogan {
+    padding: 15px 0 0;
+    float: right;
+    margin-right: 20px;
+}
+
+#main-menu-links li a {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5em 1.5em 0.3em 1.5em;
+}
+
+#secondary-menu-links a {
+    padding: 0.5em 0.5em 0 0.5em;
+}
+

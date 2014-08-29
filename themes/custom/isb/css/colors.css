@@ -9,10 +9,33 @@ body.overlay {
     border-color: #ffffff;
 }
 #page,
-#main-wrapper,
+#main-wrapper {
+    background: #ffffff;
+}
+#main-menu-links {
+    border-bottom: 7px solid #053163;
+}
+
 #main-menu-links li a.active,
 #main-menu-links li.active-trail a {
-    background: #ffffff;
+    background: #053163;
+}
+
+#main-menu-links li a {
+    background: #5d83a3;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+#main-menu-links li a:focus,
+#main-menu-links li a:hover {
+    background: #5d83a3;
+    opacity: 0.8;
+}
+#main-menu-links li a.active:focus,
+#main-menu-links li a.active:hover {
+    background: #053163;
+    opacity: 0.8;
 }
 .tabs ul.primary li a.active {
     background-color: #ffffff;
@@ -22,13 +45,8 @@ body.overlay {
     border-bottom: 1px solid #ffffff;
 }
 #header {
-    background-color: #48a9e4;
-    background-image: -moz-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
-    background-image: -ms-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
-    background-image: -o-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #0779bf), color-stop(1, #48a9e4));
-    background-image: -webkit-linear-gradient(top, #0779bf 0%, #48a9e4 100%);
-    background-image: linear-gradient(top, #0779bf 0%, #48a9e4 100%);
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #ccc;
 }
 a {
     color: #0071B3;
@@ -54,5 +72,5 @@ a:active {
 #name-and-slogan,
 #name-and-slogan a,
 #secondary-menu-links li a {
-    color: #fffeff;
+    color: #053163;
 }
