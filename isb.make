@@ -52,3 +52,6 @@ projects[rules][subdir] = "contrib"
 
 projects[rules_url_argument][version] = "1.2"
 projects[rules_url_argument][subdir] = "contrib"
+
+projects[field_permissions][version] = "1.0-beta2"
+projects[field_permissions][subdir] = "contrib"
