@@ -70,5 +70,5 @@ dependencies[] = gridbuilder
 dependencies[] = layout
 dependencies[] = navbar
 dependencies[] = responsive_preview
-;dependencies[] = spark_demo
+dependencies[] = spark_demo
 
