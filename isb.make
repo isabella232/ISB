@@ -12,6 +12,9 @@ projects[drupal][patch][1525176] = https://drupal.org/files/issues/drupal7.entit
 ; Keep eyeballs posted on http://drupal.org/node/1724130.
 projects[drupal][patch][1724012] = http://drupal.org/files/drupal-increase-php-version-1724012_0.patch
 
+; Allow installation profile inheritance
+projects[drupal][patch][] = http://drupal.org/files/1356276-make-D7-21.patch
+
 projects[isb][type] = "profile"
 projects[isb][download][type] = "git"
 projects[isb][download][url] = "https://github.com/datagovuk/ISB.git"
