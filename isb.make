@@ -41,3 +41,8 @@ projects[entityreference][subdir] = "contrib"
 
 projects[lexicon][version] = "1.10"
 projects[lexicon][subdir] = "contrib"
+
+projects[pathauto][version] = "1.2"
+projects[pathauto][subdir] = "contrib"
+# Prevent losing manual aliases with node_save() calls https://drupal.org/node/936222
+projects[pathauto][patch][] = "http://drupal.org/files/pathauto-persist-936222-130-pathauto-state.patch"
