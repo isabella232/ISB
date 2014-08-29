@@ -62,3 +62,13 @@ dependencies[] = panels_ipe
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = simplified_menu_admin
+
+; Required projects (Sparkish)
+dependencies[] = ckeditor
+dependencies[] = edit
+dependencies[] = gridbuilder
+dependencies[] = layout
+dependencies[] = navbar
+dependencies[] = responsive_preview
+dependencies[] = spark_demo
+
