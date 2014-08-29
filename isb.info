@@ -78,6 +78,7 @@ dependencies[] = strongarm
 dependencies[] = diff
 dependencies[] = lexicon
 dependencies[] = pathauto
+dependencies[] = rules
 
 ; ISB features
 dependencies[] = isb_site_feature
