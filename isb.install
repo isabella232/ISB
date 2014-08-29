@@ -12,8 +12,10 @@
  * @see system_install()
  */
 
-require_once ("profiles/spark/spark.install");
+require_once ('profiles/spark/spark.install');
 function isb_install() {
   spark_install();
+  // Symlink libraries folder from spark profile to isb profile.
+  symlink('../spark/libraries', 'profiles/isb/libraries');
 }
 
