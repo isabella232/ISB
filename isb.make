@@ -74,3 +74,6 @@ projects[context][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc1"
 projects[redirect][subdir] = "contrib"
 projects[redirect][patch][] = "http://raw.github.com/datagovuk/dgu_d7/master/patches/redirect_module_remove_oops_message.patch"
+
+projects[advuser][version] = "3.0-beta1"
+projects[advuser][subdir] = "contrib"

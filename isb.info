@@ -82,6 +82,7 @@ dependencies[] = rules
 dependencies[] = rules_url_argument
 dependencies[] = context
 dependencies[] = redirect
+dependencies[] = advuser
 
 ; ISB features
 dependencies[] = isb_site_feature
