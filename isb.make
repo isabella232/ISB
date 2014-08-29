@@ -83,3 +83,6 @@ projects[google_analytics][subdir] = "contrib"
 
 projects[flag][version] = "3.5"
 projects[flag][subdir] = "contrib"
+
+projects[emptyparagraphkiller][version] = "1.0-beta2"
+projects[emptyparagraphkiller][subdir] = "contrib"
