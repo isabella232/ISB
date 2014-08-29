@@ -3,7 +3,7 @@ description = This is a sub-theme of theme Responsive Bartik
 core = 7.x
 base theme = responsive_bartik
 
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/isb_style.css
 stylesheets[all][] = css/colors.css
 
 regions[header] = Header
