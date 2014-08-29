@@ -89,3 +89,6 @@ projects[emptyparagraphkiller][subdir] = "contrib"
 
 projects[smart_trim][version] = "1.4"
 projects[smart_trim][subdir] = "contrib"
+
+projects[mollom][version] = "2.10"
+projects[mollom][subdir] = "contrib"
