@@ -38,3 +38,6 @@ projects[diff][subdir] = "contrib"
 
 projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = "contrib"
+
+projects[lexicon][version] = "1.10"
+projects[lexicon][subdir] = "contrib"

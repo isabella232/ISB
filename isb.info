@@ -76,6 +76,7 @@ dependencies[] = responsive_preview
 dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = diff
+dependencies[] = lexicon
 
 ; ISB features
 dependencies[] = isb_site_feature
