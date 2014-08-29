@@ -67,3 +67,6 @@ projects[stringoverrides][subdir] = "contrib"
 
 projects[fieldable_panels_panes][version] = "1.5"
 projects[fieldable_panels_panes][subdir] = "contrib"
+
+projects[context][version] = "3.2"
+projects[context][subdir] = "contrib"
