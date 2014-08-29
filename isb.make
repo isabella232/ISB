@@ -61,3 +61,6 @@ projects[field_group][subdir] = "contrib"
 
 projects[conditional_fields][version] = "3.0-alpha1"
 projects[conditional_fields][subdir] = "contrib"
+
+projects[stringoverrides][version] = "1.8"
+projects[stringoverrides][subdir] = "contrib"
