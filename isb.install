@@ -17,5 +17,8 @@ function isb_install() {
   spark_install();
   // Symlink libraries folder from spark profile to isb profile.
   symlink('../spark/libraries', 'profiles/isb/libraries');
+
+  // Clear cache to discover libraries.
+  cache_clear_all();
 }
 
