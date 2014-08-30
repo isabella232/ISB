@@ -35,3 +35,9 @@
 .region-header {
     margin: 0.5em 0.5em 0 1em;
 }
+
+
+.panel-responsive .rld-col {
+    margin-left: 1%;
+    padding: 0 0.5%;
+}
