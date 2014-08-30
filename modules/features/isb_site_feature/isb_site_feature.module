@@ -5,3 +5,34 @@
  */
 
 include_once 'isb_site_feature.features.inc';
+
+/**
+ * Implements hook_block_info().
+ */
+function isb_site_feature_block_info() {
+  $blocks = array();
+  $blocks['isb_login_link'] = array(
+    'info' => t('Login link'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function isb_site_feature_block_view($delta='') {
+  $block = array();
+
+  switch($delta) {
+    case 'isb_login_link' :
+      if(!user_is_logged_in()) {
+        $destination = drupal_get_destination();
+        $block['content'] = l('Login', 'user', array(
+          'query' => $destination['destination'] == 'home' ? '' : $destination,
+          'attributes' => array('class' => array('nav-user')), 'html' => TRUE
+        ));
+      }
+      break;
+  }
+  return $block;
+}
