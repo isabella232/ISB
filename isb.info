@@ -76,7 +76,6 @@ dependencies[] = responsive_preview
 dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = diff
-dependencies[] = lexicon
 dependencies[] = pathauto
 dependencies[] = rules
 dependencies[] = rules_url_argument
@@ -85,6 +84,8 @@ dependencies[] = redirect
 dependencies[] = advuser
 dependencies[] = emptyparagraphkiller
 dependencies[] = smart_trim
+dependencies[] = lexicon
+dependencies[] = faq
 
 ; ISB features
 dependencies[] = isb_site_feature
