@@ -1,4 +1,17 @@
-/* ---------- ISB custom CSS ----------- */
+/* ---------- ISB CSS overrides and additions ----------- */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+body {
+    font-size: 0.8em;
+}
+
+body, #site-slogan, .ui-widget, .comment-form label {
+    font-family: "Open Sans", "Lucida Sans Unicode", "Lucida Sans", "Lucida Grande", Verdana, Geneva, sans-serif;
+}
+
+#content .section, .sidebar .section {
+    padding: 0 20px;
+}
 
 #site-name a {
     font-weight: bold;
@@ -36,8 +49,75 @@
     margin: 0.5em 0.5em 0 1em;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0 0.3em;
+}
+
+.breadcrumb {
+    padding: 0 20px;
+}
 
 .panel-responsive .rld-col {
-    margin-left: 1%;
-    padding: 0 0.5%;
+    margin: 0 1% 0 0;
+    padding: 0 0.5% 0 0;
+}
+
+.views-row {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #aaa;
+}
+
+.views-row-first {
+    border-top: 1px dotted #aaa;
+    margin-top: 20px;
+}
+
+.field-label-inline .field-label,
+.views-label {
+    clear: both;
+    float: left;
+    font-weight: bold;
+    width: 145px;
+}
+
+.field-label-inline .field-items,
+.views-field .field-content {
+    float: none;
+    margin-left: 150px;
+}
+
+.view-news .field-content {
+    margin: 0;
+}
+
+#content .views-field-title .field-content {
+    margin: 8px 0;
+}
+
+#content .views-field-title .field-content a {
+    padding-top: 10px !important;
+}
+
+.content .field {
+    clear: both;
+    border-top: 1px solid #aaa;
+    padding: 8px 0;
+    margin-bottom: 0;
+}
+
+.content .field-label-inline .field-items .field-item {
+    padding-left: 10px;
+    border-left: 1px dotted #aaa;
+}
+
+.node-teaser {
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.view-news .attachment .views-row,
+.view-faq .views-row,
+.view-faq .views-row {
+    border: none;
 }

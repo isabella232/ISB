@@ -12,9 +12,6 @@ body.overlay {
 #main-wrapper {
     background: #ffffff;
 }
-#main-menu-links {
-    border-bottom: 7px solid #053163;
-}
 
 #main-menu-links li a.active,
 #main-menu-links li.active-trail a {
@@ -46,7 +43,7 @@ body.overlay {
 }
 #header {
     background-color: #e0e0e0;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 2px solid #053163;
 }
 a {
     color: #0071B3;
