@@ -116,7 +116,17 @@ function isb_standard_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '15',
+        ),
+        'redirect' => array(
+          'weight' => '14',
+        ),
+      ),
       'display' => array(),
     ),
   );
@@ -166,7 +176,7 @@ function isb_standard_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_standard_pattern';
-  $strongarm->value = 'standards/[node:title]';
+  $strongarm->value = '[node:field-standard-type-key]/[node:title]';
   $export['pathauto_node_standard_pattern'] = $strongarm;
 
   return $export;

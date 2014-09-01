@@ -328,15 +328,15 @@ function isb_standard_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        1 => 'Business Data Standards',
-        2 => 'Controlled Vocabularies',
-        3 => 'Guidance Documents',
-        4 => 'Technical Data Standards',
+        'bds' => 'Business Data Standards',
+        'cl' => 'Controlled Vocabularies',
+        'guidance' => 'Guidance Documents',
+        'tds' => 'Technical Data Standards',
       ),
       'allowed_values_function' => '',
     ),
     'translatable' => '0',
-    'type' => 'list_integer',
+    'type' => 'list_text',
   );
 
   // Exported field_base: 'field_standard_version'

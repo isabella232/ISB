@@ -5,3 +5,32 @@
  */
 
 include_once 'isb_standard.features.inc';
+
+/**
+ * Implements hook_token_info().
+ */
+function isb_standard_token_info() {
+  $info['tokens']['node']['field-standard-type-key'] = array(
+    'name' => t('Standard Type - key'),
+    'description' => t('Key of "field_standard_type" field allowed values.'),
+  );
+  return $info;
+}
+/**
+ * Implements hook_tokens().
+ */
+function isb_standard_tokens($type, $tokens, array $data = array(), array $options = array()) {
+  $replacements = array();
+  if ($type == 'entity' && $data['token_type'] == 'node' && !empty($data['entity'])) {
+    $node = $data['entity'];
+
+    foreach ($tokens as $name => $original) {
+      switch($name) {
+        case 'field-standard-type-key':
+          $replacements[$original] = $node->field_standard_type[LANGUAGE_NONE][0]['value'];
+          break;
+      }
+    }
+  return $replacements;
+  }
+}

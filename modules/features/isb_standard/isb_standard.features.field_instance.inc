@@ -26,7 +26,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '6',
+        'weight' => '7',
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -209,7 +209,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '7',
+        'weight' => '6',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -387,7 +387,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => '2',
+        'weight' => '4',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -428,7 +428,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '4',
+        'weight' => '0',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -472,7 +472,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => '0',
+        'weight' => '3',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -554,7 +554,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '3',
+        'weight' => '2',
       ),
       'teaser' => array(
         'label' => 'above',
