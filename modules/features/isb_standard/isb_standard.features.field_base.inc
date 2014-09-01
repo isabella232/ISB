@@ -215,6 +215,9 @@ function isb_standard_field_default_field_bases() {
     'deleted' => '0',
     'entity_types' => array(),
     'field_name' => 'field_standard_category',
+    'field_permissions' => array(
+      'type' => '0',
+    ),
     'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
@@ -282,6 +285,9 @@ function isb_standard_field_default_field_bases() {
     'deleted' => '0',
     'entity_types' => array(),
     'field_name' => 'field_standard_status',
+    'field_permissions' => array(
+      'type' => '0',
+    ),
     'foreign keys' => array(),
     'indexes' => array(
       'value' => array(

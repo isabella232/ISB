@@ -26,7 +26,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => '6',
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -77,7 +77,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => '12',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -121,7 +121,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => '8',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -165,7 +165,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => '11',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -209,7 +209,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => '7',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -253,7 +253,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => '10',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -297,7 +297,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => '9',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -339,10 +339,10 @@ function isb_standard_field_default_field_instances() {
           'edit' => array(
             'editor' => 'form',
           ),
-          'link' => FALSE,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 1,
+        'weight' => '5',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -387,7 +387,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 2,
+        'weight' => '2',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -398,7 +398,7 @@ function isb_standard_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_standard_category',
-    'label' => 'Standard Category',
+    'label' => 'Category',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -428,7 +428,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => '4',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -472,7 +472,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 4,
+        'weight' => '0',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -483,7 +483,7 @@ function isb_standard_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_standard_status',
-    'label' => 'Standard status',
+    'label' => 'Status',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -513,7 +513,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 3,
+        'weight' => '1',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -554,7 +554,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => '3',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -586,16 +586,16 @@ function isb_standard_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Annexes');
   t('Body');
+  t('Category');
   t('Changes from previous version');
   t('Copyright statement');
   t('Introduction');
   t('Notes');
   t('References');
   t('Replaced by');
-  t('Standard Category');
   t('Standard Type');
   t('Standard identifier');
-  t('Standard status');
+  t('Status');
   t('Version');
 
   return $field_instances;
