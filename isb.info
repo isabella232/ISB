@@ -91,3 +91,5 @@ dependencies[] = path_breadcrumbs
 ; ISB features
 dependencies[] = isb_site_feature
 dependencies[] = isb_standard
+dependencies[] = isb_news
+
