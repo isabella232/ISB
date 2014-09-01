@@ -3,7 +3,6 @@ description = A sample of how to list featured content over a list of full conte
 core = 7.x
 package = Features
 dependencies[] = ctools
-dependencies[] = faq_content
 dependencies[] = features
 dependencies[] = image
 dependencies[] = strongarm
