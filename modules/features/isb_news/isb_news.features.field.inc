@@ -82,7 +82,7 @@ function isb_news_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_new_image'
+  // Exported field: 'node-news-field_news_image'
   $fields['node-news-field_news_image'] = array(
     'field_config' => array(
       'active' => '1',
@@ -160,7 +160,7 @@ function isb_news_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-news-field_new_subtitle'
+  // Exported field: 'node-news-field_news_subtitle'
   $fields['node-news-field_news_subtitle'] = array(
     'field_config' => array(
       'active' => '1',
