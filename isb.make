@@ -104,9 +104,6 @@ projects[smart_trim][subdir] = "contrib"
 projects[mollom][version] = "2.10"
 projects[mollom][subdir] = "contrib"
 
-projects[faq][version] = "2.0-alpha1"
-projects[faq][subdir] = "contrib"
-
 projects[devel][version] = "1.5"
 projects[devel][subdir] = "contrib"
 
