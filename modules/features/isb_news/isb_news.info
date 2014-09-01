@@ -9,7 +9,7 @@ features[field][] = "node-news-field_new_image"
 features[field][] = "node-news-field_new_subtitle"
 features[node][] = "news"
 features[views_view][] = "news"
-name = "Featured News"
+name = "News"
 package = "Features"
 php = "5.2.4"
 
