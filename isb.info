@@ -86,6 +86,7 @@ dependencies[] = emptyparagraphkiller
 dependencies[] = smart_trim
 dependencies[] = lexicon
 dependencies[] = path_breadcrumbs
+dependencies[] = field_group_multiple
 
 ; ISB features
 dependencies[] = isb_site_feature

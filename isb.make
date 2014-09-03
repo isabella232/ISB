@@ -67,6 +67,9 @@ projects[field_permissions][subdir] = "contrib"
 projects[field_group][version] = "1.1"
 projects[field_group][subdir] = "contrib"
 
+projects[field_group_multiple][version] = "1.0-beta2"
+projects[field_group_multiple][subdir] = "contrib"
+
 projects[lexicon][version] = "1.10"
 projects[lexicon][subdir] = "contrib"
 
