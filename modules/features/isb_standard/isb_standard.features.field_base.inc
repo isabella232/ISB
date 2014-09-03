@@ -64,6 +64,197 @@ function isb_standard_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_column_1'
+  $field_bases['field_column_1'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_column_1',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '255',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_column_2'
+  $field_bases['field_column_2'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_column_2',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '255',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_column_3'
+  $field_bases['field_column_3'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_column_3',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '255',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_column_4'
+  $field_bases['field_column_4'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_column_4',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '255',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_column_5'
+  $field_bases['field_column_5'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_column_5',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '255',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_controlled_list_labes'
+  $field_bases['field_controlled_list_labes'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_controlled_list_labes',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 0,
+      'path' => '',
+    ),
+    'translatable' => '0',
+    'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_controlled_list_values'
+  $field_bases['field_controlled_list_values'] = array(
+    'active' => '1',
+    'cardinality' => '-1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_controlled_list_values',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => '0',
+    'type' => 'field_collection',
+  );
+
   // Exported field_base: 'field_copyright_statement'
   $field_bases['field_copyright_statement'] = array(
     'active' => '1',
@@ -116,6 +307,151 @@ function isb_standard_field_default_field_bases() {
     'settings' => array(),
     'translatable' => '0',
     'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_label_1'
+  $field_bases['field_label_1'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_label_1',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '64',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_label_2'
+  $field_bases['field_label_2'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_label_2',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '64',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_label_3'
+  $field_bases['field_label_3'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_label_3',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '64',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_label_4'
+  $field_bases['field_label_4'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_label_4',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '64',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_label_5'
+  $field_bases['field_label_5'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_label_5',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '64',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
   );
 
   // Exported field_base: 'field_notes'
