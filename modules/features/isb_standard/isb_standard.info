@@ -5,6 +5,7 @@ package = Features
 dependencies[] = conditional_fields
 dependencies[] = entityreference
 dependencies[] = features
+dependencies[] = field_collection
 dependencies[] = field_collection_table
 dependencies[] = list
 dependencies[] = options
