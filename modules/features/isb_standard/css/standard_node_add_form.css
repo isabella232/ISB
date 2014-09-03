@@ -1,0 +1,37 @@
+form.node-standard-form #edit-field-controlled-list-values th {
+    text-transform: none;
+}
+
+form.node-standard-form #edit-field-controlled-list-values {
+    position: relative;
+    padding-top: 1px;
+}
+
+form.node-standard-form #edit-field-controlled-list-values th {
+    padding-left: 0.666em;
+}
+
+form.node-standard-form #edit-field-controlled-list-values th:first-child label{
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+form.node-standard-form #edit-field-controlled-list-values .sticky-header th:first-child label{
+    display: none;
+}
+
+form.node-standard-form #edit-field-controlled-list-labes .fieldset-legend{
+    font-family: "Helvetica Neue",helvetica,"Segoe UI",segoe,"Ubuntu","Droid Sans","Arial",sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+form.node-standard-form #edit-field-controlled-list-labes .field-widget-text-textfield {
+    float: left;
+}
+
+form.node-standard-form #edit-field-controlled-list-labes .field-widget-text-textfield input {
+    max-width: 170px;
+}

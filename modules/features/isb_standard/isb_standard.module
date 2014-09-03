@@ -6,6 +6,14 @@
 
 include_once 'isb_standard.features.inc';
 
+
+/**
+ * Implements hook_form_FORM_ID_alter()
+ */
+function isb_standard_form_standard_node_form_alter(&$form, &$form_state, $form_id) {
+  $form['#attached']['css'][] = drupal_get_path('module', 'isb_standard') . '/css/standard_node_add_form.css';
+}
+
 /**
  * Implements hook_token_info().
  */
