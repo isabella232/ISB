@@ -121,3 +121,10 @@ h1, h2, h3, h4, h5, h6 {
 .view-faq .views-row {
     border: none;
 }
+
+.field-name-field-controlled-list-values .field {
+    border: none;
+    padding: 3px;
+    margin: 0;
+}
+
