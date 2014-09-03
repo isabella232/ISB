@@ -72,6 +72,7 @@ projects[field_collection][subdir] = "contrib"
 
 projects[field_collection_table][version] = "1.0-beta1"
 projects[field_collection_table][subdir] = "contrib"
+projects[field_collection_table][patch][] = "http://www.drupal.org/files/field_collection_table-1815496-2-fix_malformed_table.patch"
 
 projects[lexicon][version] = "1.10"
 projects[lexicon][subdir] = "contrib"
