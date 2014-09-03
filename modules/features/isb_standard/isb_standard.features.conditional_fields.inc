@@ -13,7 +13,7 @@ function isb_standard_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'standard',
-    'dependent' => 'field_controlled_list_labes',
+    'dependent' => 'field_controlled_list_labels',
     'dependee' => 'field_standard_type',
     'options' => array(
       'state' => 'visible',

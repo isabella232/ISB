@@ -209,13 +209,13 @@ function isb_standard_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_controlled_list_labes'
-  $field_bases['field_controlled_list_labes'] = array(
+  // Exported field_base: 'field_controlled_list_labels'
+  $field_bases['field_controlled_list_labels'] = array(
     'active' => '1',
     'cardinality' => '1',
     'deleted' => '0',
     'entity_types' => array(),
-    'field_name' => 'field_controlled_list_labes',
+    'field_name' => 'field_controlled_list_labels',
     'foreign keys' => array(),
     'indexes' => array(
       'revision_id' => array(

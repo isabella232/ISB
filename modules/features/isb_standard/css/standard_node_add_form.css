@@ -21,17 +21,17 @@ form.node-standard-form #edit-field-controlled-list-values .sticky-header th:fir
     display: none;
 }
 
-form.node-standard-form #edit-field-controlled-list-labes .fieldset-legend{
+form.node-standard-form #edit-field-controlled-list-labels .fieldset-legend{
     font-family: "Helvetica Neue",helvetica,"Segoe UI",segoe,"Ubuntu","Droid Sans","Arial",sans-serif;
     font-size: 1em;
     line-height: 1.5em;
     font-weight: 700;
 }
 
-form.node-standard-form #edit-field-controlled-list-labes .field-widget-text-textfield {
+form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield {
     float: left;
 }
 
-form.node-standard-form #edit-field-controlled-list-labes .field-widget-text-textfield input {
+form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield input {
     max-width: 170px;
 }

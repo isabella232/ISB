@@ -10,9 +10,9 @@
 function isb_standard_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'field_collection_item-field_controlled_list_labes-field_label_1'
-  $field_instances['field_collection_item-field_controlled_list_labes-field_label_1'] = array(
-    'bundle' => 'field_controlled_list_labes',
+  // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_1'
+  $field_instances['field_collection_item-field_controlled_list_labels-field_label_1'] = array(
+    'bundle' => 'field_controlled_list_labels',
     'default_value' => NULL,
     'deleted' => '0',
     'description' => '',
@@ -48,9 +48,9 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_controlled_list_labes-field_label_2'
-  $field_instances['field_collection_item-field_controlled_list_labes-field_label_2'] = array(
-    'bundle' => 'field_controlled_list_labes',
+  // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_2'
+  $field_instances['field_collection_item-field_controlled_list_labels-field_label_2'] = array(
+    'bundle' => 'field_controlled_list_labels',
     'default_value' => NULL,
     'deleted' => '0',
     'description' => '',
@@ -86,9 +86,9 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_controlled_list_labes-field_label_3'
-  $field_instances['field_collection_item-field_controlled_list_labes-field_label_3'] = array(
-    'bundle' => 'field_controlled_list_labes',
+  // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_3'
+  $field_instances['field_collection_item-field_controlled_list_labels-field_label_3'] = array(
+    'bundle' => 'field_controlled_list_labels',
     'default_value' => NULL,
     'deleted' => '0',
     'description' => '',
@@ -124,9 +124,9 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_controlled_list_labes-field_label_4'
-  $field_instances['field_collection_item-field_controlled_list_labes-field_label_4'] = array(
-    'bundle' => 'field_controlled_list_labes',
+  // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_4'
+  $field_instances['field_collection_item-field_controlled_list_labels-field_label_4'] = array(
+    'bundle' => 'field_controlled_list_labels',
     'default_value' => NULL,
     'deleted' => '0',
     'description' => '',
@@ -162,9 +162,9 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_controlled_list_labes-field_label_5'
-  $field_instances['field_collection_item-field_controlled_list_labes-field_label_5'] = array(
-    'bundle' => 'field_controlled_list_labes',
+  // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_5'
+  $field_instances['field_collection_item-field_controlled_list_labels-field_label_5'] = array(
+    'bundle' => 'field_controlled_list_labels',
     'default_value' => NULL,
     'deleted' => '0',
     'description' => '',
@@ -529,8 +529,8 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-standard-field_controlled_list_labes'
-  $field_instances['node-standard-field_controlled_list_labes'] = array(
+  // Exported field_instance: 'node-standard-field_controlled_list_labels'
+  $field_instances['node-standard-field_controlled_list_labels'] = array(
     'bundle' => 'standard',
     'default_value' => NULL,
     'deleted' => '0',
@@ -550,8 +550,8 @@ function isb_standard_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_controlled_list_labes',
-    'label' => 'Controlled list labes',
+    'field_name' => 'field_controlled_list_labels',
+    'label' => 'Controlled list labels',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1053,7 +1053,7 @@ function isb_standard_field_default_field_instances() {
   t('Column #3');
   t('Column #4');
   t('Column #5');
-  t('Controlled list labes');
+  t('Controlled list labels');
   t('Controlled list values');
   t('Copyright statement');
   t('Introduction');
