@@ -15,6 +15,18 @@ function isb_standard_form_standard_node_form_alter(&$form, &$form_state, $form_
 }
 
 /**
+ * Implements hook_preprocess_field().
+ */
+function isb_standard_preprocess_field(&$variables) {
+  if ($variables['element']['#field_name'] == 'field_controlled_list_values') {
+    $field_collection_labels = entity_load_single('field_collection_item', $variables['element']['#object']->field_controlled_list_labes[LANGUAGE_NONE][0]['value']);
+    foreach ($variables['items'][0]['#rows'] as $id => $row) {
+      $variables['items'][0]['#header'][$id]['data'] = $field_collection_labels->{'field_label_' . ($id + 1)}[LANGUAGE_NONE][0]['safe_value'];
+    }
+  }
+}
+
+/**
  * Implements hook_token_info().
  */
 function isb_standard_token_info() {
