@@ -87,6 +87,7 @@ dependencies[] = smart_trim
 dependencies[] = lexicon
 dependencies[] = path_breadcrumbs
 dependencies[] = field_collection_table
+dependencies[] = print
 
 ; ISB features
 dependencies[] = isb_site_feature

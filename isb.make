@@ -116,3 +116,6 @@ projects[devel][subdir] = "contrib"
 
 projects[path_breadcrumbs][version] = "3.0"
 projects[path_breadcrumbs][subdir] = "contrib"
+
+projects[print][version] = "2.0"
+projects[print][subdir] = "contrib"
