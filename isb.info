@@ -87,7 +87,7 @@ dependencies[] = smart_trim
 dependencies[] = lexicon
 dependencies[] = path_breadcrumbs
 dependencies[] = field_collection_table
-dependencies[] = print
+dependencies[] = print_pdf_wkhtmltopdf
 
 ; ISB features
 dependencies[] = isb_site_feature
