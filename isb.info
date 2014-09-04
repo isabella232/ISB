@@ -94,4 +94,4 @@ dependencies[] = print_ui
 dependencies[] = isb_site_feature
 dependencies[] = isb_standard
 dependencies[] = isb_news
-
+dependencies[] = isb_print
