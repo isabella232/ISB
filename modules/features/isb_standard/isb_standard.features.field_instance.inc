@@ -437,7 +437,7 @@ function isb_standard_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => '7',
+      'weight' => '8',
     ),
   );
 
@@ -481,7 +481,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '14',
+      'weight' => '15',
     ),
   );
 
@@ -525,7 +525,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '11',
+      'weight' => '12',
     ),
   );
 
@@ -561,7 +561,7 @@ function isb_standard_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => '8',
+      'weight' => '9',
     ),
   );
 
@@ -605,14 +605,28 @@ function isb_standard_field_default_field_instances() {
       'module' => 'field_collection_table',
       'settings' => array(),
       'type' => 'field_collection_table',
-      'weight' => '9',
+      'weight' => '10',
     ),
   );
 
   // Exported field_instance: 'node-standard-field_copyright_statement'
   $field_instances['node-standard-field_copyright_statement'] = array(
     'bundle' => 'standard',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => '<p><a href="https://www.gov.uk/help/terms-conditions">© Crown copyright 2012</a> &nbsp;<br />
+The Information Standards Board (ISB) is an advisory body to the Department for Education (DfE) and the Department for Business, Innovation and Skills (BIS).<br />
+The information it produces is subject to Crown copyright, which is administered by the National Archives.</p>
+
+<p>The Crown copyright protected information in this standard (other than ISB or Departmental logos) may be reproduced free of charge in any format or medium under the terms of the Open Government Licence, available from the National Archives website.</p>
+
+<p>Any reuse is subject to the material being reproduced accurately and not used in a misleading context. It must be acknowledged as being protected by Crown copyright and the title of the source material must be supplied with the ISB named as the corporate author.</p>
+
+<p>Authorisation to reproduce any information in this standard which is identified as being the copyright of a third party must be obtained from the copyright holders concerned.</p>
+',
+        'format' => 'filtered_html',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -649,7 +663,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '15',
+      'weight' => '16',
     ),
   );
 
@@ -693,7 +707,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '6',
+      'weight' => '7',
     ),
   );
 
@@ -737,7 +751,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '13',
+      'weight' => '14',
     ),
   );
 
@@ -781,7 +795,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '12',
+      'weight' => '13',
     ),
   );
 
@@ -827,7 +841,7 @@ function isb_standard_field_default_field_instances() {
         'size' => '60',
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => '10',
+      'weight' => '11',
     ),
   );
 
@@ -869,6 +883,62 @@ function isb_standard_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_buttons',
       'weight' => '4',
+    ),
+  );
+
+  // Exported field_instance: 'node-standard-field_standard_date'
+  $field_instances['node-standard-field_standard_date'] = array(
+    'bundle' => 'standard',
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+          'format_type' => 'long',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+        ),
+        'type' => 'date_default',
+        'weight' => 15,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_standard_date',
+    'label' => 'Date of Standard',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => '15',
+        'input_format' => 'm/d/Y - H:i:s',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => '6',
     ),
   );
 
@@ -1056,6 +1126,7 @@ function isb_standard_field_default_field_instances() {
   t('Controlled list labels');
   t('Controlled list values');
   t('Copyright statement');
+  t('Date of Standard');
   t('Introduction');
   t('Label for column #1');
   t('Label for column #2');
