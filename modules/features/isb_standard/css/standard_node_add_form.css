@@ -21,7 +21,7 @@ form.node-standard-form #edit-field-controlled-list-values .sticky-header th:fir
     display: none;
 }
 
-form.node-standard-form #edit-field-controlled-list-labels .fieldset-legend{
+form.node-standard-form fieldset span {
     font-family: "Helvetica Neue",helvetica,"Segoe UI",segoe,"Ubuntu","Droid Sans","Arial",sans-serif;
     font-size: 1em;
     line-height: 1.5em;
@@ -34,4 +34,12 @@ form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-te
 
 form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield input {
     max-width: 170px;
+}
+
+#edit-field-standard-date-und-0-value {
+    padding: 0;
+}
+
+#edit-field-standard-date-und-0-value label {
+    display: none;
 }
