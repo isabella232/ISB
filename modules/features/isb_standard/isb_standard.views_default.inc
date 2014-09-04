@@ -66,6 +66,10 @@ function isb_standard_views_default_views() {
   $handler->display->display_options['fields']['field_standard_category']['table'] = 'field_data_field_standard_category';
   $handler->display->display_options['fields']['field_standard_category']['field'] = 'field_standard_category';
   $handler->display->display_options['fields']['field_standard_category']['delta_offset'] = '0';
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
