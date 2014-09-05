@@ -64,11 +64,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .views-row {
     padding-bottom: 10px;
-    border-bottom: 1px dotted #aaa;
 }
 
-.views-row-first {
-    border-top: 1px dotted #aaa;
+.view-standards .views-row-first {
     margin-top: 20px;
 }
 
@@ -92,6 +90,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #content .views-field-title .field-content {
     margin: 8px 0;
+}
+
+#content .views-field-title h2.field-content {
+    margin-bottom: 0;
 }
 
 #content .views-field-title .field-content a {

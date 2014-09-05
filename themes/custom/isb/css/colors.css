@@ -71,3 +71,7 @@ a:active {
 #secondary-menu-links li a {
     color: #053163;
 }
+
+.views-field-created {
+    color: #888;
+}
