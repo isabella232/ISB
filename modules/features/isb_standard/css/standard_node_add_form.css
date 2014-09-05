@@ -1,24 +1,36 @@
+form.node-standard-form #edit-field-data-definitions-value th,
 form.node-standard-form #edit-field-controlled-list-values th {
     text-transform: none;
+    padding-left: 0.666em;
 }
 
+form.node-standard-form #edit-field-data-definitions-values,
 form.node-standard-form #edit-field-controlled-list-values {
     position: relative;
     padding-top: 1px;
 }
 
-form.node-standard-form #edit-field-controlled-list-values th {
-    padding-left: 0.666em;
-}
-
-form.node-standard-form #edit-field-controlled-list-values th:first-child label{
+form.node-standard-form #edit-field-data-definitions-values th:first-child label,
+form.node-standard-form #edit-field-controlled-list-values th:first-child label {
     position: absolute;
     top: 5px;
     left: 0;
 }
 
-form.node-standard-form #edit-field-controlled-list-values .sticky-header th:first-child label{
+form.node-standard-form #edit-field-data-definitions-values .sticky-header th:first-child label,
+form.node-standard-form #edit-field-controlled-list-values .sticky-header th:first-child label {
     display: none;
+}
+
+
+form.node-standard-form #edit-field-data-definitions-labels .field-widget-text-textfield,
+form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield {
+    float: left;
+}
+
+form.node-standard-form #edit-field-data-definitions-labels .field-widget-text-textfield input,
+form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield input {
+    max-width: 170px;
 }
 
 form.node-standard-form fieldset span {
@@ -26,14 +38,6 @@ form.node-standard-form fieldset span {
     font-size: 1em;
     line-height: 1.5em;
     font-weight: 700;
-}
-
-form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield {
-    float: left;
-}
-
-form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield input {
-    max-width: 170px;
 }
 
 #edit-field-standard-date-und-0-value {

@@ -200,6 +200,44 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_6'
+  $field_instances['field_collection_item-field_controlled_list_labels-field_label_6'] = array(
+    'bundle' => 'field_controlled_list_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_6',
+    'label' => 'Label for column #6',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '36',
+    ),
+  );
+
   // Exported field_instance: 'field_collection_item-field_controlled_list_values-field_column_1'
   $field_instances['field_collection_item-field_controlled_list_values-field_column_1'] = array(
     'bundle' => 'field_controlled_list_values',
@@ -390,6 +428,1184 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_controlled_list_values-field_column_6'
+  $field_instances['field_collection_item-field_controlled_list_values-field_column_6'] = array(
+    'bundle' => 'field_controlled_list_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_6',
+    'label' => 'Column #6',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '36',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_1'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_1'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_1',
+    'label' => 'Label for column #1',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '32',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_10'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_10'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_10',
+    'label' => 'Label for column #10',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '46',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_11'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_11'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_11',
+    'label' => 'Label for column #11',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '47',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_12'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_12'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_12',
+    'label' => 'Label for column #12',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '48',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_13'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_13'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_13',
+    'label' => 'Label for column #13',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '49',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_14'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_14'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_14',
+    'label' => 'Label for column #14',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '50',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_15'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_15'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_15',
+    'label' => 'Label for column #15',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '51',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_2'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_2'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_2',
+    'label' => 'Label for column #2',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '34',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_3'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_3'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_3',
+    'label' => 'Label for column #3',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '36',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_4'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_4'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_4',
+    'label' => 'Label for column #4',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '38',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_5'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_5'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_5',
+    'label' => 'Label for column #5',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '40',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_6'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_6'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_6',
+    'label' => 'Label for column #6',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '42',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_7'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_7'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_7',
+    'label' => 'Label for column #7',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '43',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_8'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_8'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_8',
+    'label' => 'Label for column #8',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '44',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_9'
+  $field_instances['field_collection_item-field_data_definitions_labels-field_label_9'] = array(
+    'bundle' => 'field_data_definitions_labels',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_label_9',
+    'label' => 'Label for column #9',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '45',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_1'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_1'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_1',
+    'label' => 'Column #1',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '32',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_10'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_10'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_10',
+    'label' => 'Column #10',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '46',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_11'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_11'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_11',
+    'label' => 'Column #11',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '47',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_12'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_12'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_12',
+    'label' => 'Column #12',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '48',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_13'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_13'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_13',
+    'label' => 'Column #13',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '49',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_14'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_14'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_14',
+    'label' => 'Column #14',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '50',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_15'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_15'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_15',
+    'label' => 'Column #15',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '51',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_2'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_2'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_2',
+    'label' => 'Column #2',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '34',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_3'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_3'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_3',
+    'label' => 'Column #3',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '36',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_4'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_4'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_4',
+    'label' => 'Column #4',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '38',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_5'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_5'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_5',
+    'label' => 'Column #5',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '40',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_6'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_6'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_6',
+    'label' => 'Column #6',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '42',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_7'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_7'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_7',
+    'label' => 'Column #7',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '43',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_8'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_8'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_8',
+    'label' => 'Column #8',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '44',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_data_definitions_values-field_column_9'
+  $field_instances['field_collection_item-field_data_definitions_values-field_column_9'] = array(
+    'bundle' => 'field_data_definitions_values',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_column_9',
+    'label' => 'Column #9',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '45',
+    ),
+  );
+
   // Exported field_instance: 'node-standard-body'
   $field_instances['node-standard-body'] = array(
     'bundle' => 'standard',
@@ -481,7 +1697,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '15',
+      'weight' => '17',
     ),
   );
 
@@ -525,7 +1741,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '12',
+      'weight' => '14',
     ),
   );
 
@@ -663,7 +1879,97 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '16',
+      'weight' => '18',
+    ),
+  );
+
+  // Exported field_instance: 'node-standard-field_data_definitions_labels'
+  $field_instances['node-standard-field_data_definitions_labels'] = array(
+    'bundle' => 'standard',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => array(
+            'editor' => 'form',
+          ),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_data_definitions_labels',
+    'label' => 'Data definitions labels',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection',
+      'settings' => array(),
+      'type' => 'field_collection_embed',
+      'weight' => '11',
+    ),
+  );
+
+  // Exported field_instance: 'node-standard-field_data_definitions_values'
+  $field_instances['node-standard-field_data_definitions_values'] = array(
+    'bundle' => 'standard',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Add',
+          'delete' => 'Delete',
+          'description' => TRUE,
+          'edit' => array(
+            'editor' => 'form',
+          ),
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_data_definitions_values',
+    'label' => 'Data definitions',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection_table',
+      'settings' => array(),
+      'type' => 'field_collection_table',
+      'weight' => '12',
     ),
   );
 
@@ -751,7 +2057,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '14',
+      'weight' => '16',
     ),
   );
 
@@ -795,7 +2101,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '13',
+      'weight' => '15',
     ),
   );
 
@@ -841,7 +2147,7 @@ The information it produces is subject to Crown copyright, which is administered
         'size' => '60',
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => '11',
+      'weight' => '13',
     ),
   );
 
@@ -1119,20 +2425,42 @@ The information it produces is subject to Crown copyright, which is administered
   t('Category');
   t('Changes from previous version');
   t('Column #1');
+  t('Column #10');
+  t('Column #11');
+  t('Column #12');
+  t('Column #13');
+  t('Column #14');
+  t('Column #15');
   t('Column #2');
   t('Column #3');
   t('Column #4');
   t('Column #5');
+  t('Column #6');
+  t('Column #7');
+  t('Column #8');
+  t('Column #9');
   t('Controlled list labels');
   t('Controlled list values');
   t('Copyright statement');
+  t('Data definitions');
+  t('Data definitions labels');
   t('Date of Standard');
   t('Introduction');
   t('Label for column #1');
+  t('Label for column #10');
+  t('Label for column #11');
+  t('Label for column #12');
+  t('Label for column #13');
+  t('Label for column #14');
+  t('Label for column #15');
   t('Label for column #2');
   t('Label for column #3');
   t('Label for column #4');
   t('Label for column #5');
+  t('Label for column #6');
+  t('Label for column #7');
+  t('Label for column #8');
+  t('Label for column #9');
   t('Notes');
   t('References');
   t('Replaced by');
