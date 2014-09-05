@@ -48,6 +48,27 @@ function isb_print_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'print_html_display_comment_standard';
+  $strongarm->value = 0;
+  $export['print_html_display_comment_standard'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_html_display_standard';
+  $strongarm->value = 1;
+  $export['print_html_display_standard'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_html_display_urllist_standard';
+  $strongarm->value = 1;
+  $export['print_html_display_urllist_standard'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'print_html_link_class';
   $strongarm->value = 'print-page';
   $export['print_html_link_class'] = $strongarm;
@@ -172,9 +193,30 @@ function isb_print_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'print_pdf_display_comment_standard';
+  $strongarm->value = 0;
+  $export['print_pdf_display_comment_standard'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_pdf_display_standard';
+  $strongarm->value = 1;
+  $export['print_pdf_display_standard'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'print_pdf_display_sys_urllist';
   $strongarm->value = 0;
   $export['print_pdf_display_sys_urllist'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_pdf_display_urllist_standard';
+  $strongarm->value = 1;
+  $export['print_pdf_display_urllist_standard'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -240,6 +282,13 @@ function isb_print_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'print_pdf_orientation_standard';
+  $strongarm->value = '';
+  $export['print_pdf_orientation_standard'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'print_pdf_page_orientation';
   $strongarm->value = 'portrait';
   $export['print_pdf_page_orientation'] = $strongarm;
@@ -264,6 +313,13 @@ function isb_print_strongarm() {
   $strongarm->name = 'print_pdf_show_link';
   $strongarm->value = '1';
   $export['print_pdf_show_link'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_pdf_size_standard';
+  $strongarm->value = '';
+  $export['print_pdf_size_standard'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
