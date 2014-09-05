@@ -1622,7 +1622,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '8',
+        'weight' => '10',
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -1673,7 +1673,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '13',
+        'weight' => '15',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1717,7 +1717,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '9',
+        'weight' => '11',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1756,7 +1756,7 @@ function isb_standard_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => '14',
+        'weight' => '17',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1800,7 +1800,7 @@ function isb_standard_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_table_view',
-        'weight' => '7',
+        'weight' => '8',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1855,7 +1855,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '12',
+        'weight' => '14',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1892,18 +1892,9 @@ The information it produces is subject to Crown copyright, which is administered
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => array(
-            'editor' => 'form',
-          ),
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 17,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => '16',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1948,7 +1939,7 @@ The information it produces is subject to Crown copyright, which is administered
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 16,
+        'weight' => '9',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1989,7 +1980,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '6',
+        'weight' => '7',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2033,7 +2024,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '11',
+        'weight' => '13',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2077,7 +2068,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '10',
+        'weight' => '12',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2122,7 +2113,7 @@ The information it produces is subject to Crown copyright, which is administered
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => '5',
+        'weight' => '6',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2167,7 +2158,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'list_default',
-        'weight' => '4',
+        'weight' => '5',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2212,7 +2203,7 @@ The information it produces is subject to Crown copyright, which is administered
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => 15,
+        'weight' => '4',
       ),
       'teaser' => array(
         'label' => 'above',
