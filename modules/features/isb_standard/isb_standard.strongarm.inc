@@ -96,7 +96,7 @@ function isb_standard_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'redirect' => array(
-          'weight' => '30',
+          'weight' => '0',
         ),
       ),
       'display' => array(),
