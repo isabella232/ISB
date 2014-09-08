@@ -90,6 +90,7 @@ dependencies[] = field_collection_table
 dependencies[] = print_pdf_wkhtmltopdf
 dependencies[] = print_ui
 dependencies[] = date_popup
+dependencies[] = imce
 
 ; ISB features
 dependencies[] = isb_site_feature
