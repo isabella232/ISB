@@ -122,3 +122,6 @@ projects[print][subdir] = "contrib"
 
 projects[date][version] = "2.8"
 projects[date][subdir] = "contrib"
+
+projects[imce][version] = "1.9"
+projects[imce][subdir] = "contrib"
