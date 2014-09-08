@@ -21,7 +21,7 @@ function isb_print_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'print_css';
-  $strongarm->value = '';
+  $strongarm->value = '%t/css/print.css';
   $export['print_css'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -334,6 +334,13 @@ function isb_print_strongarm() {
   $strongarm->name = 'print_pdf_sys_link_visibility';
   $strongarm->value = '1';
   $export['print_pdf_sys_link_visibility'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'print_pdf_wkhtmltopdf_options';
+  $strongarm->value = '--footer-font-size 7  --footer-right \'[page]\' --header-left \'Information Standards Board\' --header-right \'Standard: [node:title]\' --header-font-size 8 --header-line --header-spacing 3';
+  $export['print_pdf_wkhtmltopdf_options'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

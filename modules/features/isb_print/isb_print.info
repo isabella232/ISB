@@ -59,6 +59,7 @@ features[variable][] = print_pdf_show_link
 features[variable][] = print_pdf_size_standard
 features[variable][] = print_pdf_sys_link_pages
 features[variable][] = print_pdf_sys_link_visibility
+features[variable][] = print_pdf_wkhtmltopdf_options
 features[variable][] = print_sourceurl_date
 features[variable][] = print_sourceurl_enabled
 features[variable][] = print_sourceurl_forcenode
