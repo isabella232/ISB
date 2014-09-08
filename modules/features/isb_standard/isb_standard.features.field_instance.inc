@@ -13,7 +13,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_1'
   $field_instances['field_collection_item-field_controlled_list_labels-field_label_1'] = array(
     'bundle' => 'field_controlled_list_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Value',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -279,7 +283,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_2'
   $field_instances['field_collection_item-field_controlled_list_labels-field_label_2'] = array(
     'bundle' => 'field_controlled_list_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Description',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -317,7 +325,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_3'
   $field_instances['field_collection_item-field_controlled_list_labels-field_label_3'] = array(
     'bundle' => 'field_controlled_list_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Source',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -2612,7 +2624,7 @@ The information it produces is subject to Crown copyright, which is administered
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'field_collection',
+        'module' => 'field_collection_table',
         'settings' => array(
           'add' => 'Add',
           'delete' => 'Delete',
@@ -2620,9 +2632,10 @@ The information it produces is subject to Crown copyright, which is administered
           'edit' => array(
             'editor' => 'form',
           ),
+          'empty' => TRUE,
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_view',
+        'type' => 'field_collection_table_view',
         'weight' => '9',
       ),
       'teaser' => array(
