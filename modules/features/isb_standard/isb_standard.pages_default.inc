@@ -57,7 +57,7 @@ function isb_standard_default_page_manager_pages() {
     'relationships' => array(),
   );
   $display = new panels_display();
-  $display->layout = 'responsive:default';
+  $display->layout = 'responsive:isb';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
