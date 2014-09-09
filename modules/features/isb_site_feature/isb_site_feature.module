@@ -37,12 +37,8 @@ function isb_site_feature_block_view($delta='') {
   return $block;
 }
 
-// == Layouts =================================================================
-
 /**
- * Implementation of hook_default_panels_layout().
- *
- * Provide a default layout for demonstration.
+ * Implements hook_default_panels_layout().
  */
 function isb_site_feature_default_panels_layout() {
   $export = array();
