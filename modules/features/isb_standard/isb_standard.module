@@ -93,6 +93,7 @@ function isb_standard_block_view($delta='') {
 
   switch($delta) {
     case 'isb_standard_versions' :
+      $nid = FALSE;
       if (arg(0) == 'node' && is_numeric(arg(1))) {
         $nid = arg(1);
         $node = node_load($nid);
@@ -106,38 +107,38 @@ function isb_standard_block_view($delta='') {
         $node = node_load($nid);
       }
 
-      $versions = db_select('field_revision_field_standard_version', 'sv')
-        ->fields('sv', array('field_standard_version_value'))
-        ->condition('entity_id', $nid)
-        ->condition('entity_type', 'node')
-        ->orderBy('revision_id', 'DESC')
-        ->distinct()
-        ->execute()
-        ->fetchCol();
+      if ($nid) {
+        $versions = db_select('field_revision_field_standard_version', 'sv')
+          ->fields('sv', array('field_standard_version_value'))
+          ->condition('entity_id', $nid)
+          ->condition('entity_type', 'node')
+          ->orderBy('revision_id', 'DESC')
+          ->distinct()
+          ->execute()
+          ->fetchCol();
 
-      $standard_base_url = drupal_get_path_alias('node/' . $nid);
+        $standard_base_url = drupal_get_path_alias('node/' . $nid);
 
-      // Don't render this block if there is only one version.
-      if(count($versions) > 1) {
-        $items = array('items' => array());
-        foreach ($versions as $version) {
-          if($version == $currently_viewing_version) {
-            $items['items'][] = $version . ' (currently viewing)';
-          }
-          else {
-            if ($node->field_standard_version[LANGUAGE_NONE][0]['value'] == $version) {
-              $items['items'][] = l($version, $standard_base_url);
+        // Don't render this block if there is only one version.
+        if(count($versions) > 1) {
+          $items = array('items' => array());
+          foreach ($versions as $version) {
+            if($version == $currently_viewing_version) {
+              $items['items'][] = $version . ' (currently viewing)';
             }
             else {
-              $items['items'][] = l($version, $standard_base_url . '/version/' . $version);
+              if ($node->field_standard_version[LANGUAGE_NONE][0]['value'] == $version) {
+                $items['items'][] = l($version, $standard_base_url);
+              }
+              else {
+                $items['items'][] = l($version, $standard_base_url . '/version/' . $version);
+              }
             }
           }
+          $block['subject'] = 'All versions of this standard';
+          $block['content'] = theme('item_list', $items);
         }
-
       }
-
-      $block['subject'] = 'All versions of this standard';
-      $block['content'] = theme('item_list', $items);;
       break;
   }
   return $block;
