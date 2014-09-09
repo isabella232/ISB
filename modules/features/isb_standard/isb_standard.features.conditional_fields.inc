@@ -159,7 +159,7 @@ function isb_standard_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'standard',
-    'dependent' => 'field_data_definitions_values',
+    'dependent' => 'field_data_definitions_labels',
     'dependee' => 'field_standard_type',
     'options' => array(
       'state' => 'visible',
@@ -232,7 +232,7 @@ function isb_standard_conditional_fields_default_fields() {
   $items[] = array(
     'entity' => 'node',
     'bundle' => 'standard',
-    'dependent' => 'field_data_definitions_labels',
+    'dependent' => 'field_data_definitions_values',
     'dependee' => 'field_standard_type',
     'options' => array(
       'state' => 'visible',
