@@ -151,6 +151,23 @@ function isb_standard_preprocess_node(&$variables) {
   // To avoid rendering node title twice.
   if($variables['type'] == 'standard' && arg(2) == 'version') {
     $variables['page'] = TRUE;
+
+
+    $version = arg(3);
+    $nid = $variables['node']->nid;
+
+    $vid = db_select('field_revision_field_standard_version', 'sv')
+      ->fields('sv', array('revision_id'))
+      ->condition('entity_id', $nid)
+      ->condition('entity_type', 'node')
+      ->condition('field_standard_version_value', $version)
+      ->orderBy('revision_id', 'DESC')
+      ->execute()
+      ->fetchField();
+
+    $variables['content']['links']['print_html']['#links']['print_html']['href'] = $variables['content']['links']['print_html']['#links']['print_html']['href'] . '/revisions/' . $vid . '/view';
+    $variables['content']['links']['print_pdf']['#links']['print_pdf']['href'] = $variables['content']['links']['print_pdf']['#links']['print_pdf']['href'] . '/revisions/' . $vid . '/view';
+
   }
 }
 
