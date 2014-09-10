@@ -1202,7 +1202,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_1'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_1'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Attribute Name',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -1468,7 +1472,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_2'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_2'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Attribute Definition',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -1506,7 +1514,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_3'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_3'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'PK',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -1544,7 +1556,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_4'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_4'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'FK',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -1582,7 +1598,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_5'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_5'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'M',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -1620,7 +1640,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_6'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_6'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Datatype',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -1658,7 +1682,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_7'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_7'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'FK Source Entity',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -1696,7 +1724,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_8'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_8'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'FK Source Attribute',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -1734,7 +1766,11 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_data_definitions_labels-field_label_9'
   $field_instances['field_collection_item-field_data_definitions_labels-field_label_9'] = array(
     'bundle' => 'field_data_definitions_labels',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'Controlled List',
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
