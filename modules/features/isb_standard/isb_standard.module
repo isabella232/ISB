@@ -186,8 +186,19 @@ function isb_standard_form_standard_node_form_alter(&$form, &$form_state, $form_
 function isb_standard_preprocess_field(&$variables) {
   if ($variables['element']['#field_name'] == 'field_controlled_list_values' && isset($variables['element']['#object']->field_controlled_list_labels[LANGUAGE_NONE][0]['value'])) {
     $field_collection_labels = entity_load_single('field_collection_item', $variables['element']['#object']->field_controlled_list_labels[LANGUAGE_NONE][0]['value']);
-    if (isset($variables['items'][0]['#rows'])) {
-      foreach ($variables['items'][0]['#rows'] as $id => $row) {
+    if (isset($variables['items'][0]['#header'])) {
+      foreach ($variables['items'][0]['#header'] as $id => $column) {
+        if (isset($field_collection_labels->{'field_label_' . ($id + 1)}[LANGUAGE_NONE][0]['safe_value'])) {
+          $variables['items'][0]['#header'][$id]['data'] = $field_collection_labels->{'field_label_' . ($id + 1)}[LANGUAGE_NONE][0]['safe_value'];
+        }
+      }
+    }
+  }
+
+  if ($variables['element']['#field_name'] == 'field_data_definitions_values' && isset($variables['element']['#object']->field_data_definitions_labels[LANGUAGE_NONE][0]['value'])) {
+    $field_collection_labels = entity_load_single('field_collection_item', $variables['element']['#object']->field_data_definitions_labels[LANGUAGE_NONE][0]['value']);
+    if (isset($variables['items'][0]['#header'])) {
+      foreach ($variables['items'][0]['#header'] as $id => $column) {
         if (isset($field_collection_labels->{'field_label_' . ($id + 1)}[LANGUAGE_NONE][0]['safe_value'])) {
           $variables['items'][0]['#header'][$id]['data'] = $field_collection_labels->{'field_label_' . ($id + 1)}[LANGUAGE_NONE][0]['safe_value'];
         }
