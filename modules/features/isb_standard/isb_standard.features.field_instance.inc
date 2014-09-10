@@ -2339,6 +2339,223 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_entities-field_data_definitions_labels'
+  $field_instances['field_collection_item-field_entities-field_data_definitions_labels'] = array(
+    'bundle' => 'field_entities',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => '5',
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_data_definitions_labels',
+    'label' => 'Data definitions labels',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection_table',
+      'settings' => array(),
+      'type' => 'field_collection_table',
+      'weight' => '4',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_entities-field_data_definitions_notes'
+  $field_instances['field_collection_item-field_entities-field_data_definitions_notes'] = array(
+    'bundle' => 'field_entities',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => '4',
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_data_definitions_notes',
+    'label' => 'Notes',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => '5',
+      ),
+      'type' => 'text_textarea',
+      'weight' => '6',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_entities-field_data_definitions_values'
+  $field_instances['field_collection_item-field_entities-field_data_definitions_values'] = array(
+    'bundle' => 'field_entities',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'field_collection_table',
+        'settings' => array(
+          'add' => '',
+          'delete' => '',
+          'description' => 1,
+          'edit' => '',
+          'empty' => 1,
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_table_view',
+        'weight' => '3',
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_data_definitions_values',
+    'label' => 'Data definitions',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'field_collection_table',
+      'settings' => array(),
+      'type' => 'field_collection_table',
+      'weight' => '5',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_entities-field_entity_description'
+  $field_instances['field_collection_item-field_entities-field_entity_description'] = array(
+    'bundle' => 'field_entities',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => '2',
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_entity_description',
+    'label' => 'Entity description',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => '1',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => '3',
+      ),
+      'type' => 'text_textarea',
+      'weight' => '3',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_entities-field_entity_name'
+  $field_instances['field_collection_item-field_entities-field_entity_name'] = array(
+    'bundle' => 'field_entities',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => '1',
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_entity_name',
+    'label' => 'Entity name',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => '0',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => '60',
+      ),
+      'type' => 'text_textfield',
+      'weight' => '2',
+    ),
+  );
+
+  // Exported field_instance: 'field_collection_item-field_entities-field_entity_type'
+  $field_instances['field_collection_item-field_entities-field_entity_type'] = array(
+    'bundle' => 'field_entities',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'list',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => '0',
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_entity_type',
+    'label' => 'Entity type',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => '1',
+    ),
+  );
+
   // Exported field_instance: 'node-standard-body'
   $field_instances['node-standard-body'] = array(
     'bundle' => 'standard',
@@ -2406,7 +2623,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '15',
+        'weight' => '14',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2430,7 +2647,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '19',
+      'weight' => '21',
     ),
   );
 
@@ -2463,7 +2680,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 20,
+        'weight' => '16',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2484,7 +2701,7 @@ function isb_standard_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => '13',
+      'weight' => '15',
     ),
   );
 
@@ -2528,7 +2745,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '16',
+      'weight' => '18',
     ),
   );
 
@@ -2543,7 +2760,7 @@ function isb_standard_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => '17',
+        'weight' => '18',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2642,7 +2859,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '14',
+        'weight' => '17',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2666,12 +2883,12 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '20',
+      'weight' => '22',
     ),
   );
 
-  // Exported field_instance: 'node-standard-field_data_definitions_labels'
-  $field_instances['node-standard-field_data_definitions_labels'] = array(
+  // Exported field_instance: 'node-standard-field_entities'
+  $field_instances['node-standard-field_entities'] = array(
     'bundle' => 'standard',
     'default_value' => NULL,
     'deleted' => '0',
@@ -2679,43 +2896,7 @@ The information it produces is subject to Crown copyright, which is administered
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => '16',
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_data_definitions_labels',
-    'label' => 'Data definitions labels',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => '11',
-    ),
-  );
-
-  // Exported field_instance: 'node-standard-field_data_definitions_values'
-  $field_instances['node-standard-field_data_definitions_values'] = array(
-    'bundle' => 'standard',
-    'default_value' => NULL,
-    'deleted' => '0',
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection_table',
+        'module' => 'field_collection',
         'settings' => array(
           'add' => 'Add',
           'delete' => 'Delete',
@@ -2723,10 +2904,9 @@ The information it produces is subject to Crown copyright, which is administered
           'edit' => array(
             'editor' => 'form',
           ),
-          'empty' => TRUE,
           'view_mode' => 'full',
         ),
-        'type' => 'field_collection_table_view',
+        'type' => 'field_collection_view',
         'weight' => '9',
       ),
       'teaser' => array(
@@ -2737,7 +2917,7 @@ The information it produces is subject to Crown copyright, which is administered
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_data_definitions_values',
+    'field_name' => 'field_entities',
     'label' => 'Data definitions',
     'required' => 1,
     'settings' => array(
@@ -2745,10 +2925,10 @@ The information it produces is subject to Crown copyright, which is administered
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'field_collection_table',
+      'module' => 'field_collection',
       'settings' => array(),
-      'type' => 'field_collection_table',
-      'weight' => '12',
+      'type' => 'field_collection_embed',
+      'weight' => '13',
     ),
   );
 
@@ -2836,7 +3016,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '18',
+      'weight' => '20',
     ),
   );
 
@@ -2880,7 +3060,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '17',
+      'weight' => '19',
     ),
   );
 
@@ -2901,7 +3081,7 @@ The information it produces is subject to Crown copyright, which is administered
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 19,
+        'weight' => '15',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2926,7 +3106,7 @@ The information it produces is subject to Crown copyright, which is administered
         'size' => '60',
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => '14',
+      'weight' => '16',
     ),
   );
 
@@ -2972,7 +3152,7 @@ The information it produces is subject to Crown copyright, which is administered
         'size' => '60',
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => '15',
+      'weight' => '17',
     ),
   );
 
@@ -3219,7 +3399,7 @@ The information it produces is subject to Crown copyright, which is administered
           'thousand_separator' => ' ',
         ),
         'type' => 'number_decimal',
-        'weight' => 21,
+        'weight' => '2',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3276,6 +3456,9 @@ The information it produces is subject to Crown copyright, which is administered
   t('Data definitions');
   t('Data definitions labels');
   t('Date of Standard');
+  t('Entity description');
+  t('Entity name');
+  t('Entity type');
   t('Introduction');
   t('Label for column #1');
   t('Label for column #10');

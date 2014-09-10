@@ -144,7 +144,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -173,7 +173,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -202,7 +202,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -231,7 +231,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -260,7 +260,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -289,7 +289,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -318,7 +318,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -347,7 +347,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -376,7 +376,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -405,7 +405,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -434,7 +434,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -463,7 +463,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -492,7 +492,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -521,7 +521,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -550,7 +550,7 @@ function isb_standard_field_default_field_bases() {
     'locked' => '0',
     'module' => 'text',
     'settings' => array(
-      'max_length' => '255',
+      'max_length' => '1023',
     ),
     'translatable' => '0',
     'type' => 'text',
@@ -652,6 +652,33 @@ function isb_standard_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
+  // Exported field_base: 'field_data_definitions_notes'
+  $field_bases['field_data_definitions_notes'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_data_definitions_notes',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => '0',
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_data_definitions_values'
   $field_bases['field_data_definitions_values'] = array(
     'active' => '1',
@@ -673,6 +700,113 @@ function isb_standard_field_default_field_bases() {
     ),
     'translatable' => '0',
     'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_entities'
+  $field_bases['field_entities'] = array(
+    'active' => '1',
+    'cardinality' => '-1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_entities',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'field_collection',
+    'settings' => array(
+      'hide_blank_items' => 1,
+      'path' => '',
+    ),
+    'translatable' => '0',
+    'type' => 'field_collection',
+  );
+
+  // Exported field_base: 'field_entity_description'
+  $field_bases['field_entity_description'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_entity_description',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => '0',
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_entity_name'
+  $field_bases['field_entity_name'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_entity_name',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(
+      'max_length' => '255',
+    ),
+    'translatable' => '0',
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_entity_type'
+  $field_bases['field_entity_type'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_entity_type',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        1 => 'Entity',
+        2 => 'Entity Supertype',
+        3 => 'Entity Subtype',
+        4 => 'Associative Entity',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => '0',
+    'type' => 'list_integer',
   );
 
   // Exported field_base: 'field_introduction'
