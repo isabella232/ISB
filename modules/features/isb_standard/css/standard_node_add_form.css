@@ -1,34 +1,27 @@
-form.node-standard-form #edit-field-data-definitions-values th,
 form.node-standard-form #edit-field-controlled-list-values th {
     text-transform: none;
     padding-left: 0.666em;
 }
 
-form.node-standard-form #edit-field-data-definitions-values,
 form.node-standard-form #edit-field-controlled-list-values {
     position: relative;
     padding-top: 1px;
 }
 
-form.node-standard-form #edit-field-data-definitions-values th:first-child label,
 form.node-standard-form #edit-field-controlled-list-values th:first-child label {
     position: absolute;
     top: 5px;
     left: 0;
 }
 
-form.node-standard-form #edit-field-data-definitions-values .sticky-header th:first-child label,
 form.node-standard-form #edit-field-controlled-list-values .sticky-header th:first-child label {
     display: none;
 }
 
-
-form.node-standard-form #edit-field-data-definitions-labels .field-widget-text-textfield,
 form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield {
     float: left;
 }
 
-form.node-standard-form #edit-field-data-definitions-labels .field-widget-text-textfield input,
 form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield input {
     max-width: 170px;
 }
@@ -46,4 +39,43 @@ form.node-standard-form fieldset span {
 
 #edit-field-standard-date-und-0-value label {
     display: none;
+}
+
+.field-name-field-data-definitions-values .field-widget-text-textfield,
+.field-name-field-data-definitions-labels .field-widget-text-textfield {
+    float: left;
+    margin-left: 10px;
+}
+
+.field-name-field-data-definitions-values .field-widget-text-textfield input,
+.field-name-field-data-definitions-labels .field-widget-text-textfield input {
+    width: 140px;
+}
+
+.field-name-field-data-definitions-values label {
+    display: none;
+}
+
+.field-name-field-data-definitions-values th label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-1-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-2-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-3-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-4-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-5-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-6-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-7-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-8-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-9-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-10-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-11-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-12-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-13-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-14-und-0-value label,
+.field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-15-und-0-value label {
+    display: block;
+}
+
+
+.form-item th label {
+    margin-left: 10px;
 }
