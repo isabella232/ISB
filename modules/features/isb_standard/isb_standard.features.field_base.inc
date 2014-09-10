@@ -10,6 +10,35 @@
 function isb_standard_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'comment_body'
+  $field_bases['comment_body'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(
+      0 => 'comment',
+    ),
+    'field_name' => 'comment_body',
+    'foreign keys' => array(
+      'format' => array(
+        'columns' => array(
+          'format' => 'format',
+        ),
+        'table' => 'filter_format',
+      ),
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => '0',
+    'type' => 'text_long',
+  );
+
   // Exported field_base: 'field_annexes'
   $field_bases['field_annexes'] = array(
     'active' => '1',
@@ -35,6 +64,34 @@ function isb_standard_field_default_field_bases() {
     'settings' => array(),
     'translatable' => '0',
     'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_audience'
+  $field_bases['field_audience'] = array(
+    'active' => '1',
+    'cardinality' => '-1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_audience',
+    'foreign keys' => array(),
+    'indexes' => array(
+      'value' => array(
+        0 => 'value',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'list',
+    'settings' => array(
+      'allowed_values' => array(
+        1 => 'Data modellers',
+        2 => 'ICT procurers',
+        3 => 'Statisticians',
+        4 => 'System developers or programmers',
+      ),
+      'allowed_values_function' => '',
+    ),
+    'translatable' => '0',
+    'type' => 'list_integer',
   );
 
   // Exported field_base: 'field_changes_previous_version'
@@ -1134,6 +1191,49 @@ function isb_standard_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_related_standards'
+  $field_bases['field_related_standards'] = array(
+    'active' => '1',
+    'cardinality' => '-1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_related_standards',
+    'foreign keys' => array(
+      'node' => array(
+        'columns' => array(
+          'target_id' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
+    'indexes' => array(
+      'target_id' => array(
+        0 => 'target_id',
+      ),
+    ),
+    'locked' => '0',
+    'module' => 'entityreference',
+    'settings' => array(
+      'handler' => 'base',
+      'handler_settings' => array(
+        'behaviors' => array(
+          'views-select-list' => array(
+            'status' => 0,
+          ),
+        ),
+        'sort' => array(
+          'type' => 'none',
+        ),
+        'target_bundles' => array(
+          'standard' => 'standard',
+        ),
+      ),
+      'target_type' => 'node',
+    ),
+    'translatable' => '0',
+    'type' => 'entityreference',
+  );
+
   // Exported field_base: 'field_replaced_by'
   $field_bases['field_replaced_by'] = array(
     'active' => '1',
@@ -1338,26 +1438,15 @@ function isb_standard_field_default_field_bases() {
     'deleted' => '0',
     'entity_types' => array(),
     'field_name' => 'field_standard_version',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
+    'foreign keys' => array(),
+    'indexes' => array(),
     'locked' => '0',
-    'module' => 'text',
+    'module' => 'number',
     'settings' => array(
-      'max_length' => '20',
+      'decimal_separator' => '.',
     ),
     'translatable' => '0',
-    'type' => 'text',
+    'type' => 'number_float',
   );
 
   return $field_bases;

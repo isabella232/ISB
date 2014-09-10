@@ -192,10 +192,10 @@ function isb_standard_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '20',
+          'weight' => '22',
         ),
         'redirect' => array(
-          'weight' => '19',
+          'weight' => '21',
         ),
       ),
       'display' => array(),

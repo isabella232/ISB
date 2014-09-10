@@ -10,6 +10,43 @@
 function isb_standard_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'comment-comment_node_standard-comment_body'
+  $field_instances['comment-comment_node_standard-comment_body'] = array(
+    'bundle' => 'comment_node_standard',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'plain_text',
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'comment',
+    'field_name' => 'comment_body',
+    'label' => 'Comment',
+    'required' => TRUE,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 0,
+    ),
+  );
+
   // Exported field_instance: 'field_collection_item-field_controlled_list_labels-field_label_1'
   $field_instances['field_collection_item-field_controlled_list_labels-field_label_1'] = array(
     'bundle' => 'field_controlled_list_labels',
@@ -2393,7 +2430,61 @@ function isb_standard_field_default_field_instances() {
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '17',
+      'weight' => '19',
+    ),
+  );
+
+  // Exported field_instance: 'node-standard-field_audience'
+  $field_instances['node-standard-field_audience'] = array(
+    'bundle' => 'standard',
+    'default_value' => array(
+      0 => array(
+        'value' => '1',
+      ),
+      1 => array(
+        'value' => '2',
+      ),
+      2 => array(
+        'value' => '3',
+      ),
+      3 => array(
+        'value' => '4',
+      ),
+    ),
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_audience',
+    'label' => 'Target audience',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => '13',
     ),
   );
 
@@ -2437,7 +2528,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '14',
+      'weight' => '16',
     ),
   );
 
@@ -2575,7 +2666,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '18',
+      'weight' => '20',
     ),
   );
 
@@ -2745,7 +2836,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '16',
+      'weight' => '18',
     ),
   );
 
@@ -2789,7 +2880,53 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '15',
+      'weight' => '17',
+    ),
+  );
+
+  // Exported field_instance: 'node-standard-field_related_standards'
+  $field_instances['node-standard-field_related_standards'] = array(
+    'bundle' => 'standard',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'edit' => array(
+            'editor' => 'form',
+          ),
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 19,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_related_standards',
+    'label' => 'Related standards',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => '60',
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => '14',
     ),
   );
 
@@ -2835,7 +2972,7 @@ The information it produces is subject to Crown copyright, which is administered
         'size' => '60',
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => '13',
+      'weight' => '15',
     ),
   );
 
@@ -2876,7 +3013,7 @@ The information it produces is subject to Crown copyright, which is administered
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => '4',
+      'weight' => '5',
     ),
   );
 
@@ -3017,7 +3154,7 @@ The information it produces is subject to Crown copyright, which is administered
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => '3',
+      'weight' => '4',
     ),
   );
 
@@ -3071,14 +3208,18 @@ The information it produces is subject to Crown copyright, which is administered
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'text',
+        'module' => 'number',
         'settings' => array(
+          'decimal_separator' => '.',
           'edit' => array(
-            'editor' => 'plain_text',
+            'editor' => 'form',
           ),
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => ' ',
         ),
-        'type' => 'text_default',
-        'weight' => '2',
+        'type' => 'number_decimal',
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3092,17 +3233,18 @@ The information it produces is subject to Crown copyright, which is administered
     'label' => 'Version',
     'required' => 1,
     'settings' => array(
-      'text_processing' => '0',
+      'max' => '',
+      'min' => '0',
+      'prefix' => '',
+      'suffix' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => '20',
-      ),
-      'type' => 'text_textfield',
-      'weight' => '5',
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => '3',
     ),
   );
 
@@ -3127,6 +3269,7 @@ The information it produces is subject to Crown copyright, which is administered
   t('Column #7');
   t('Column #8');
   t('Column #9');
+  t('Comment');
   t('Controlled list labels');
   t('Controlled list values');
   t('Copyright statement');
@@ -3151,10 +3294,12 @@ The information it produces is subject to Crown copyright, which is administered
   t('Label for column #9');
   t('Notes');
   t('References');
+  t('Related standards');
   t('Replaced by');
   t('Standard Type');
   t('Standard identifier');
   t('Status');
+  t('Target audience');
   t('Version');
 
   return $field_instances;
