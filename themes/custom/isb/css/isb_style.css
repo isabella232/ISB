@@ -130,3 +130,46 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+.field-collection-container,
+.field-type-field-collection .field {
+    border: none;
+    margin: 0;
+}
+
+.field-type-field-collection table tr th {
+    background: #eee;
+    color: #3B3B3B;
+    border: 1px solid #3B3B3B;
+}
+
+.field-type-field-collection table tr td {
+    background: #fff;
+    color: #3B3B3B;
+    border: 1px solid #3B3B3B;
+}
+
+.field-collection-view {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+
+.field-name-field-data-definitions-notes {
+    font-size: 0.8em;
+}
+
+.content .field-name-field-entity-type,
+.content .field-name-field-entity-name {
+    font-size: 1em;
+    font-weight: bold;
+    float: left;
+    clear: none;
+}
+
+.content .field-name-field-entity-type .field-item:after {
+    content: ": "
+}
+.content .field-name-field-entity-name {
+    margin-left: 10px;
+}
+
