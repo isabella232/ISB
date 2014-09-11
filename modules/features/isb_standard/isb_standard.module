@@ -235,3 +235,124 @@ function isb_standard_tokens($type, $tokens, array $data = array(), array $optio
   return $replacements;
   }
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function isb_standard_form_diff_node_revisions_alter(&$form, &$form_state, $form_id) {
+  $vids = array_keys($form['info']);
+  $nid = $form['nid']['#value'];
+  $node = node_load($nid);
+  if ($node->type == 'standard') {
+    $versions = db_select('field_revision_field_standard_version', 'sv')
+      ->fields('sv', array('revision_id', 'field_standard_version_value'))
+      ->condition('entity_id', $nid)
+      ->condition('entity_type', 'node')
+      ->condition('revision_id', $vids, 'IN')
+      ->orderBy('revision_id', 'DESC')
+      ->execute()
+      ->fetchAllKeyed();
+
+    $versions_used = array();
+    foreach ($versions as $vid => $version) {
+      if (in_array($version, $versions_used)) {
+        $form['versions'][$vid] = array('#markup' => $version);
+      }
+      else {
+        $form['versions'][$vid] = array('#markup' => '<strong>' . $version . '<strong>');
+        $versions_used[] = $version;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function isb_standard_theme_registry_alter(&$theme_registry) {
+  $theme_registry['diff_node_revisions']['file'] = 'isb_standard.module';
+  $theme_registry['diff_node_revisions']['theme path'] = 'profiles/isb/modules/features/isb_standard';
+  $theme_registry['diff_node_revisions']['function'] = 'theme_isb_standard_node_revisions';
+  unset($theme_registry['diff_node_revisions']['includes']);
+}
+
+/**
+ * Theme function to display the revisions with standard versions.
+ */
+function theme_isb_standard_node_revisions($vars) {
+  $form = $vars['form'];
+  $output = '';
+
+  // Overview table:
+  $header = array(
+    t('Revision'),
+    t('Version'),
+    array('data' => drupal_render($form['submit']), 'colspan' => 2),
+    array('data' => t('Operations'), 'colspan' => 2),
+  );
+
+  if (empty($form['versions'])) {
+    unset($header[1]); // Version
+  }
+
+  if (isset($form['info']) && is_array($form['info'])) {
+    foreach (element_children($form['info']) as $key) {
+      $row = array();
+      if (isset($form['operations'][$key][0])) {
+        // Note: even if the commands for revert and delete are not permitted,
+        // the array is not empty since we set a dummy in this case.
+        $row[] = drupal_render($form['info'][$key]);
+        if (isset($form['versions'])) {
+          $row[] = drupal_render($form['versions'][$key]);
+        }
+        $row[] = drupal_render($form['diff']['old'][$key]);
+        $row[] = drupal_render($form['diff']['new'][$key]);
+        $row[] = drupal_render($form['operations'][$key][0]);
+        $row[] = drupal_render($form['operations'][$key][1]);
+        $rows[] = array(
+          'data' => $row,
+          'class' => array('diff-revision'),
+        );
+      }
+      else {
+        // The current revision (no commands to revert or delete).
+        $row[] = array(
+          'data' => drupal_render($form['info'][$key]),
+          'class' => array('revision-current'),
+        );
+        if (isset($form['versions'])) {
+          $row[] = array(
+            'data' => drupal_render($form['versions'][$key]),
+            'class' => array('version'),
+          );
+        }
+        $row[] = array(
+          'data' => drupal_render($form['diff']['old'][$key]),
+          'class' => array('revision-current'),
+        );
+        $row[] = array(
+          'data' => drupal_render($form['diff']['new'][$key]),
+          'class' => array('revision-current'),
+        );
+        $row[] = array(
+          'data' => t('current revision'),
+          'class' => array('revision-current'),
+          'colspan' => '2',
+        );
+        $rows[] = array(
+          'data' => $row,
+          'class' => array('error diff-revision'),
+        );
+      }
+    }
+  }
+  $output .= theme('table__diff__revisions', array(
+    'header' => $header,
+    'rows' => $rows,
+    'sticky' => FALSE,
+    'attributes' => array('class' => 'diff-revisions'),
+  ));
+
+  $output .= drupal_render_children($form);
+  return $output;
+}
