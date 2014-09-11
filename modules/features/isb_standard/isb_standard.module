@@ -240,6 +240,12 @@ function isb_standard_tokens($type, $tokens, array $data = array(), array $optio
  * Implements hook_form_alter().
  */
 function isb_standard_form_diff_node_revisions_alter(&$form, &$form_state, $form_id) {
+
+  $form['#attached']['css'][] = array(
+    'data' => 'td.version {color: #aaa;} td.version strong {color: #000;}',
+    'type' => 'inline',
+  );
+
   $vids = array_keys($form['info']);
   $nid = $form['nid']['#value'];
   $node = node_load($nid);
@@ -303,7 +309,10 @@ function theme_isb_standard_node_revisions($vars) {
         // the array is not empty since we set a dummy in this case.
         $row[] = drupal_render($form['info'][$key]);
         if (isset($form['versions'])) {
-          $row[] = drupal_render($form['versions'][$key]);
+          $row[] = array(
+            'data' => drupal_render($form['versions'][$key]),
+            'class' => array('version'),
+          );
         }
         $row[] = drupal_render($form['diff']['old'][$key]);
         $row[] = drupal_render($form['diff']['new'][$key]);
