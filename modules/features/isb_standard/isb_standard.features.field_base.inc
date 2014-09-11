@@ -94,6 +94,24 @@ function isb_standard_field_default_field_bases() {
     'type' => 'list_integer',
   );
 
+  // Exported field_base: 'field_bda_version'
+  $field_bases['field_bda_version'] = array(
+    'active' => '1',
+    'cardinality' => '1',
+    'deleted' => '0',
+    'entity_types' => array(),
+    'field_name' => 'field_bda_version',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => '0',
+    'module' => 'number',
+    'settings' => array(
+      'decimal_separator' => '.',
+    ),
+    'translatable' => '0',
+    'type' => 'number_float',
+  );
+
   // Exported field_base: 'field_changes_previous_version'
   $field_bases['field_changes_previous_version'] = array(
     'active' => '1',
@@ -1375,7 +1393,14 @@ function isb_standard_field_default_field_bases() {
     'deleted' => '0',
     'entity_types' => array(),
     'field_name' => 'field_replaced_by',
-    'foreign keys' => array(),
+    'foreign keys' => array(
+      'node' => array(
+        'columns' => array(
+          'target_id' => 'nid',
+        ),
+        'table' => 'node',
+      ),
+    ),
     'indexes' => array(
       'target_id' => array(
         0 => 'target_id',

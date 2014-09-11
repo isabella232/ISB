@@ -2639,7 +2639,7 @@ function isb_standard_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => '8',
+      'weight' => '10',
     ),
   );
 
@@ -2659,7 +2659,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '14',
+        'weight' => '16',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2683,7 +2683,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '21',
+      'weight' => '19',
     ),
   );
 
@@ -2716,7 +2716,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => '16',
+        'weight' => '7',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2737,7 +2737,56 @@ function isb_standard_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => '15',
+      'weight' => '7',
+    ),
+  );
+
+  // Exported field_instance: 'node-standard-field_bda_version'
+  $field_instances['node-standard-field_bda_version'] = array(
+    'bundle' => 'standard',
+    'default_value' => NULL,
+    'deleted' => '0',
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'number',
+        'settings' => array(
+          'decimal_separator' => '.',
+          'edit' => array(
+            'editor' => 'form',
+          ),
+          'prefix_suffix' => TRUE,
+          'scale' => 2,
+          'thousand_separator' => ' ',
+        ),
+        'type' => 'number_decimal',
+        'weight' => '3',
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bda_version',
+    'label' => 'BDA Version',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '1',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => '4',
     ),
   );
 
@@ -2757,7 +2806,7 @@ function isb_standard_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => '11',
+        'weight' => '13',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2781,7 +2830,7 @@ function isb_standard_field_default_field_instances() {
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '18',
+      'weight' => '16',
     ),
   );
 
@@ -2796,7 +2845,7 @@ function isb_standard_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => '18',
+        'weight' => '19',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2817,7 +2866,7 @@ function isb_standard_field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => '9',
+      'weight' => '11',
     ),
   );
 
@@ -2840,7 +2889,7 @@ function isb_standard_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_table_view',
-        'weight' => '8',
+        'weight' => '11',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2861,7 +2910,7 @@ function isb_standard_field_default_field_instances() {
       'module' => 'field_collection_table',
       'settings' => array(),
       'type' => 'field_collection_table',
-      'weight' => '10',
+      'weight' => '12',
     ),
   );
 
@@ -2895,7 +2944,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '17',
+        'weight' => '18',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2919,7 +2968,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '22',
+      'weight' => '20',
     ),
   );
 
@@ -2943,7 +2992,7 @@ The information it produces is subject to Crown copyright, which is administered
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => '9',
+        'weight' => '12',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -2984,7 +3033,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '7',
+        'weight' => '9',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3008,7 +3057,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '7',
+      'weight' => '9',
     ),
   );
 
@@ -3028,7 +3077,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '13',
+        'weight' => '15',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3052,7 +3101,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '5',
       ),
       'type' => 'text_textarea',
-      'weight' => '20',
+      'weight' => '18',
     ),
   );
 
@@ -3072,7 +3121,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'text_default',
-        'weight' => '12',
+        'weight' => '14',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3096,7 +3145,7 @@ The information it produces is subject to Crown copyright, which is administered
         'rows' => '3',
       ),
       'type' => 'text_textarea',
-      'weight' => '19',
+      'weight' => '17',
     ),
   );
 
@@ -3117,7 +3166,7 @@ The information it produces is subject to Crown copyright, which is administered
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => '15',
+        'weight' => '17',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3142,7 +3191,7 @@ The information it produces is subject to Crown copyright, which is administered
         'size' => '60',
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => '16',
+      'weight' => '14',
     ),
   );
 
@@ -3163,7 +3212,7 @@ The information it produces is subject to Crown copyright, which is administered
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => '6',
+        'weight' => '8',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3188,7 +3237,7 @@ The information it produces is subject to Crown copyright, which is administered
         'size' => '60',
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => '17',
+      'weight' => '15',
     ),
   );
 
@@ -3208,7 +3257,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'list_default',
-        'weight' => '5',
+        'weight' => '6',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3229,7 +3278,7 @@ The information it produces is subject to Crown copyright, which is administered
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => '5',
+      'weight' => '6',
     ),
   );
 
@@ -3253,7 +3302,7 @@ The information it produces is subject to Crown copyright, which is administered
           'multiple_to' => '',
         ),
         'type' => 'date_default',
-        'weight' => '4',
+        'weight' => '5',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3285,7 +3334,7 @@ The information it produces is subject to Crown copyright, which is administered
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => '6',
+      'weight' => '8',
     ),
   );
 
@@ -3349,7 +3398,7 @@ The information it produces is subject to Crown copyright, which is administered
           ),
         ),
         'type' => 'list_default',
-        'weight' => '3',
+        'weight' => '4',
       ),
       'teaser' => array(
         'label' => 'above',
@@ -3370,7 +3419,7 @@ The information it produces is subject to Crown copyright, which is administered
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => '4',
+      'weight' => '5',
     ),
   );
 
@@ -3450,7 +3499,7 @@ The information it produces is subject to Crown copyright, which is administered
     'required' => 1,
     'settings' => array(
       'max' => '',
-      'min' => '0',
+      'min' => '1',
       'prefix' => '',
       'suffix' => '',
       'user_register_form' => FALSE,
@@ -3467,6 +3516,7 @@ The information it produces is subject to Crown copyright, which is administered
   // Translatables
   // Included for use with string extractors like potx.
   t('Annexes');
+  t('BDA Version');
   t('Body');
   t('Category');
   t('Changes from previous version');
