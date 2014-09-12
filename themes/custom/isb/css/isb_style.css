@@ -154,18 +154,24 @@ table tr td {
     padding: 0;
 }
 
+.content .field-name-field-notes,
 .field-name-field-data-definitions-notes {
     font-size: 0.8em;
 }
 
+.content .field-name-field-controlled-list-desc p,
+.content .field-name-field-controlled-list-desc,
+.content .field-name-field-controlled-list-notes,
 .content .field-name-field-entity-description p,
 .content .field-name-field-entity-description,
+.content .field-name-field-notes,
 .content .field-name-field-data-definitions-notes {
     padding: 0;
     margin: 0;
 }
 
 
+.content .field-name-field-controlled-list-name,
 .content .field-name-field-entity-type,
 .content .field-name-field-entity-name {
     font-size: 1em;
@@ -173,6 +179,7 @@ table tr td {
     float: left;
     clear: none;
 }
+
 
 .content .field-name-field-entity-type .field-item:after {
     content: ": "
