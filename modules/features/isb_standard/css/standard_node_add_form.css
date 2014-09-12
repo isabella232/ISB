@@ -1,3 +1,32 @@
+form.node-standard-form #edit-field-controlled-list-values th {
+    text-transform: none;
+    padding-left: 0.666em;
+}
+
+-form.node-standard-form #edit-field-controlled-list-values {
+    position: relative;
+    padding-top: 1px;
+}
+
+form.node-standard-form #edit-field-controlled-list-values th:first-child label {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+form.node-standard-form #edit-field-controlled-list-values .sticky-header th:first-child label {
+    display: none;
+}
+
+-form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield {
+    float: left;
+}
+
+form.node-standard-form #edit-field-controlled-list-labels .field-widget-text-textfield input {
+    max-width: 170px;
+}
+
+
 form.node-standard-form fieldset span {
     font-family: "Helvetica Neue",helvetica,"Segoe UI",segoe,"Ubuntu","Droid Sans","Arial",sans-serif;
     font-size: 1em;
@@ -29,10 +58,11 @@ form.node-standard-form fieldset span {
     width: 140px;
 }
 
-.field-name-field-controlled-list-values label,
+
 .field-name-field-data-definitions-values label {
     display: none;
 }
+/*
 .field-name-field-controlled-list-values th label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-0-field-controlled-list-values-und-0-field-column-1-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-0-field-controlled-list-values-und-0-field-column-2-und-0-value label,
@@ -49,6 +79,7 @@ form.node-standard-form fieldset span {
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-0-field-controlled-list-values-und-0-field-column-13-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-0-field-controlled-list-values-und-0-field-column-14-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-0-field-controlled-list-values-und-0-field-column-15-und-0-value label,
+*/
 .field-name-field-data-definitions-values th label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-1-und-0-value label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-2-und-0-value label,
@@ -65,7 +96,7 @@ form.node-standard-form fieldset span {
 .field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-13-und-0-value label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-14-und-0-value label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-0-field-data-definitions-values-und-0-field-column-15-und-0-value label,
-
+/*
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-1-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-2-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-3-und-0-value label,
@@ -81,6 +112,7 @@ form.node-standard-form fieldset span {
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-13-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-14-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-15-und-0-value label,
+*/
 .field-name-field-data-definitions-values th label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-1-field-data-definitions-values-und-0-field-column-1-und-0-value label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-1-field-data-definitions-values-und-0-field-column-2-und-0-value label,
@@ -97,7 +129,7 @@ form.node-standard-form fieldset span {
 .field-name-field-data-definitions-values .form-item-field-entities-und-1-field-data-definitions-values-und-0-field-column-13-und-0-value label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-1-field-data-definitions-values-und-0-field-column-14-und-0-value label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-1-field-data-definitions-values-und-0-field-column-15-und-0-value label,
-
+/*
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-1-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-2-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-3-und-0-value label,
@@ -113,6 +145,7 @@ form.node-standard-form fieldset span {
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-13-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-14-und-0-value label,
 .field-name-field-controlled-list-values .form-item-field-controlled-lists-und-1-field-controlled-list-values-und-0-field-column-15-und-0-value label,
+*/
 .field-name-field-data-definitions-values th label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-2-field-data-definitions-values-und-0-field-column-1-und-0-value label,
 .field-name-field-data-definitions-values .form-item-field-entities-und-2-field-data-definitions-values-und-0-field-column-2-und-0-value label,
