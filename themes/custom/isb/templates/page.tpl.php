@@ -88,7 +88,7 @@
  */
 ?>
 <div id="page-wrapper"><div id="page">
-
+<div style="text-align: center; background: #000; color: #fff; padding: 5px;">This is the new ISB Beta site. You can browse all existing  standards information now. We'll be adding new content features in the coming months.</div>
   <header id="header" role="banner" class="<?php print $secondary_menu ? 'with-secondary-menu': 'without-secondary-menu'; ?>"><div class="section clearfix">
     <?php if ($secondary_menu): ?>
       <nav id="secondary-menu" role="navigation" class="navigation">
