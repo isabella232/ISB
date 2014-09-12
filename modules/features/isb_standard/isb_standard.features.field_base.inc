@@ -624,35 +624,6 @@ function isb_standard_field_default_field_bases() {
     'type' => 'field_collection',
   );
 
-  // Exported field_base: 'field_controlled_list_name'
-  $field_bases['field_controlled_list_name'] = array(
-    'active' => '1',
-    'cardinality' => '1',
-    'deleted' => '0',
-    'entity_types' => array(),
-    'field_name' => 'field_controlled_list_name',
-    'foreign keys' => array(
-      'format' => array(
-        'columns' => array(
-          'format' => 'format',
-        ),
-        'table' => 'filter_format',
-      ),
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => '0',
-    'module' => 'text',
-    'settings' => array(
-      'max_length' => '255',
-    ),
-    'translatable' => '0',
-    'type' => 'text',
-  );
-
   // Exported field_base: 'field_controlled_list_values'
   $field_bases['field_controlled_list_values'] = array(
     'active' => '1',
@@ -660,29 +631,6 @@ function isb_standard_field_default_field_bases() {
     'deleted' => '0',
     'entity_types' => array(),
     'field_name' => 'field_controlled_list_values',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'revision_id' => array(
-        0 => 'revision_id',
-      ),
-    ),
-    'locked' => '0',
-    'module' => 'field_collection',
-    'settings' => array(
-      'hide_blank_items' => 1,
-      'path' => '',
-    ),
-    'translatable' => '0',
-    'type' => 'field_collection',
-  );
-
-  // Exported field_base: 'field_controlled_lists'
-  $field_bases['field_controlled_lists'] = array(
-    'active' => '1',
-    'cardinality' => '-1',
-    'deleted' => '0',
-    'entity_types' => array(),
-    'field_name' => 'field_controlled_lists',
     'foreign keys' => array(),
     'indexes' => array(
       'revision_id' => array(
