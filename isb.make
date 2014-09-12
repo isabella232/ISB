@@ -69,7 +69,6 @@ projects[field_group][subdir] = "contrib"
 
 projects[field_collection][version] = "1.0-beta7"
 projects[field_collection][subdir] = "contrib"
-projects[field_collection_table][patch][] = "http://www.drupal.org/files/issues/field_collection-fields-not-saving-1549364-52.patch"
 
 projects[field_collection_table][version] = "1.0-beta1"
 projects[field_collection_table][subdir] = "contrib"
