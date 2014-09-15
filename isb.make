@@ -114,7 +114,6 @@ projects[emptyparagraphkiller][subdir] = "contrib"
 
 projects[smart_trim][version] = "1.4"
 projects[smart_trim][subdir] = "contrib"
-
 projects[mollom][version] = "2.10"
 projects[mollom][subdir] = "contrib"
 
@@ -132,3 +131,6 @@ projects[date][subdir] = "contrib"
 
 projects[imce][version] = "1.9"
 projects[imce][subdir] = "contrib"
+
+projects[facetapi][version] = "1.5"
+projects[facetapi][subdir] = "contrib"
