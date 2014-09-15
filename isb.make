@@ -70,6 +70,13 @@ projects[field_group][subdir] = "contrib"
 projects[field_collection][version] = "1.0-beta7"
 projects[field_collection][subdir] = "contrib"
 
+projects[field_collection][type] = "module"
+projects[field_collection][download][type] = "git"
+projects[field_collection][download][url] = "http://git.drupal.org/project/field_collection.git"
+projects[field_collection][download][revision] = "6aecbd40bbd308157de528ae16f3c523c4f7e1cb"
+projects[field_collection][subdir] = "contrib"
+projects[field_collection][patch][] = "http://drupal.org/files/issues/field_collection-fields-not-saving-1549364-52.patch"
+
 projects[field_collection_table][version] = "1.0-beta1"
 projects[field_collection_table][subdir] = "contrib"
 projects[field_collection_table][patch][] = "http://www.drupal.org/files/field_collection_table-1815496-2-fix_malformed_table.patch"
