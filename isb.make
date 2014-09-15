@@ -135,5 +135,5 @@ projects[imce][subdir] = "contrib"
 projects[facetapi][version] = "1.5"
 projects[facetapi][subdir] = "contrib"
 
-projects[faq][version] = "2.0-alpha2"
+projects[faq][version] = "1.0-rc2"
 projects[faq][subdir] = "contrib"
