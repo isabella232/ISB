@@ -216,10 +216,10 @@ function isb_standard_preprocess_node(&$variables) {
       ->fetchAllKeyed();
 
     $max_version = max($revisions);
-    if(current($revisions) != $max_version) {
+    if(reset($revisions) != $max_version) {
       foreach ($revisions as $vid => $version) {
         if ($version == $max_version) {
-          $message = 'Current version ' . current($revisions) . ' of this standard is not the latest one. <a href="/node/' . $variables['node']->nid . '/revisions/' . $vid .'/revert">Make version ' . max($revisions) . ' current revision</a>.';
+          $message = 'Current version ' . reset($revisions) . ' of this standard is not the latest one. <a href="/node/' . $variables['node']->nid . '/revisions/' . $vid .'/revert">Make version ' . $max_version . ' current revision</a>.';
           break;
         }
       }
