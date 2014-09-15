@@ -67,7 +67,47 @@ function isb_standard_version_view($prefix, $alias, $version) {
   if ($vid) {
     $node = node_load($nid, $vid);
     drupal_set_title($node->title);
-    return node_view($node);
+
+    $rendered_node = node_view($node);
+
+    $destination = drupal_get_destination();
+
+    $view_link = array(
+      '#theme' => 'link',
+      'title' => 'View',
+      'href' => $destination['destination'],
+      'localized_options' => array(),
+    );
+    $edit_link = array(
+      '#theme' => 'link',
+      'title' => 'Make current revision and edit',
+      'href' => 'node/' . $nid . '/revisions/' . $vid . '/revert',
+      'localized_options' => array('query' => array('destination' => 'node/' . $nid . '/edit')),
+    );
+
+    $tabs = array(
+      array(
+        '#theme' => 'menu_local_task',
+        '#link' => $view_link,
+        '#active' => TRUE,
+      ),
+      array(
+        '#theme' => 'menu_local_task',
+        '#link' => $edit_link,
+        '#active' => FALSE,
+      ),
+    );
+
+    $menu = array(
+      '#theme' => 'menu_local_tasks',
+      '#primary' => $tabs,
+      '#prefix' => '<div class="tabs">',
+      '#suffix' => '</div>'
+    );
+
+    $rendered_node['link'] = $menu;
+
+    return $rendered_node ;
   }
   else {
     drupal_not_found();
@@ -150,16 +190,12 @@ function isb_standard_block_view($delta='') {
 function isb_standard_preprocess_node(&$variables) {
   // Set $page to TRUE when viewing other revision via /(bds|cl|guidance|tds)/<alias>/version/<version number>
   // To avoid rendering node title twice.
-  if($variables['type'] == 'standard' && arg(2) == 'version') {
+  if ($variables['type'] == 'standard' && arg(2) == 'version') {
     $variables['page'] = TRUE;
-
-
     $version = arg(3);
-    $nid = $variables['node']->nid;
-
     $vid = db_select('field_revision_field_standard_version', 'sv')
       ->fields('sv', array('revision_id'))
-      ->condition('entity_id', $nid)
+      ->condition('entity_id', $variables['node']->nid)
       ->condition('entity_type', 'node')
       ->condition('field_standard_version_value', $version)
       ->orderBy('revision_id', 'DESC')
@@ -168,7 +204,27 @@ function isb_standard_preprocess_node(&$variables) {
 
     $variables['content']['links']['print_html']['#links']['print_html']['href'] = $variables['content']['links']['print_html']['#links']['print_html']['href'] . '/revisions/' . $vid . '/view';
     $variables['content']['links']['print_pdf']['#links']['print_pdf']['href'] = $variables['content']['links']['print_pdf']['#links']['print_pdf']['href'] . '/revisions/' . $vid . '/view';
+  }
 
+  if ($variables['type'] == 'standard' && (arg(2) != 'revisions' && arg(4) != 'revert')) {
+    $revisions = db_select('field_revision_field_standard_version', 'sv')
+      ->fields('sv', array('revision_id', 'field_standard_version_value'))
+      ->condition('entity_id', $variables['node']->nid)
+      ->condition('entity_type', 'node')
+      ->orderBy('revision_id', 'DESC')
+      ->execute()
+      ->fetchAllKeyed();
+
+    $max_version = max($revisions);
+    if(current($revisions) != $max_version) {
+      foreach ($revisions as $vid => $version) {
+        if ($version == $max_version) {
+          $message = 'Current version ' . current($revisions) . ' of this standard is not the latest one. <a href="/node/' . $variables['node']->nid . '/revisions/' . $vid .'/revert">Make version ' . max($revisions) . ' current revision</a>.';
+          break;
+        }
+      }
+      drupal_set_message($message,'warning');
+    }
   }
 }
 
