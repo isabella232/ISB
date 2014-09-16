@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the ISB search feature.
+ */
+
+include_once 'isb_search.features.inc';
