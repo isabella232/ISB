@@ -143,3 +143,6 @@ projects[search_api_db][subdir] = "contrib"
 
 projects[faq][version] = "1.0-rc2"
 projects[faq][subdir] = "contrib"
+
+projects[webform][version] = "4.0"
+projects[webform][subdir] = "contrib"
