@@ -64,23 +64,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .views-row {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 .view-standards .views-row-first {
     margin-top: 20px;
 }
 
-.field-label-inline .field-label,
 .views-label {
+    float: left;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.views-field-field-standard-type,
+.views-field-field-standard-version,
+.views-field-field-standard-status,
+.views-field-field-standard-identifier {
+    float: left;
+    margin-bottom: 5px;
+}
+
+.views-field-field-standard-type .field-content,
+.views-field-field-standard-version .field-content,
+.views-field-field-standard-status .field-content,
+.views-field-field-standard-identifier .field-content {
+    padding-right: 20px;
+
+}
+
+.views-field-search-api-excerpt {
+    clear: both;
+    border-top: 1px dotted #aaa;
+    padding-top: 5px;
+}
+
+.field-label-inline .field-label {
     clear: both;
     float: left;
     font-weight: bold;
     width: 145px;
 }
 
-.field-label-inline .field-items,
-.views-field .field-content {
+
+.field-label-inline .field-items {
     float: none;
     margin-left: 150px;
 }
