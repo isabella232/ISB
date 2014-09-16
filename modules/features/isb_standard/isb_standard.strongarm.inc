@@ -14,7 +14,7 @@ function isb_standard_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'additional_settings__active_tab_standard';
-  $strongarm->value = 'edit-display';
+  $strongarm->value = 'edit-print';
   $export['additional_settings__active_tab_standard'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -86,6 +86,13 @@ function isb_standard_strongarm() {
   $strongarm->name = 'diff_view_mode_preview_node_standard';
   $strongarm->value = 'full';
   $export['diff_view_mode_preview_node_standard'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'facetapi:block_cache:search_api@standards_library';
+  $strongarm->value = -1;
+  $export['facetapi:block_cache:search_api@standards_library'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

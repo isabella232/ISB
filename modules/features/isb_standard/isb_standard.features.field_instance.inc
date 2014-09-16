@@ -2378,7 +2378,137 @@ function isb_standard_field_default_field_instances() {
   // Exported field_instance: 'field_collection_item-field_entities-field_data_definitions_labels'
   $field_instances['field_collection_item-field_entities-field_data_definitions_labels'] = array(
     'bundle' => 'field_entities',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'field_label_1' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'Attribute Name',
+            ),
+          ),
+        ),
+        'field_label_10' => array(
+          'und' => array(
+            0 => array(
+              'value' => '',
+            ),
+          ),
+        ),
+        'field_label_11' => array(
+          'und' => array(
+            0 => array(
+              'value' => '',
+            ),
+          ),
+        ),
+        'field_label_12' => array(
+          'und' => array(
+            0 => array(
+              'value' => '',
+            ),
+          ),
+        ),
+        'field_label_13' => array(
+          'und' => array(
+            0 => array(
+              'value' => '',
+            ),
+          ),
+        ),
+        'field_label_14' => array(
+          'und' => array(
+            0 => array(
+              'value' => '',
+            ),
+          ),
+        ),
+        'field_label_15' => array(
+          'und' => array(
+            0 => array(
+              'value' => '',
+            ),
+          ),
+        ),
+        'field_label_2' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'Attribute Definition',
+            ),
+          ),
+        ),
+        'field_label_3' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'PK',
+            ),
+          ),
+        ),
+        'field_label_4' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'FK',
+            ),
+          ),
+        ),
+        'field_label_5' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'M',
+            ),
+          ),
+        ),
+        'field_label_6' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'Datatype',
+            ),
+          ),
+        ),
+        'field_label_7' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'FK Source Entity',
+            ),
+          ),
+        ),
+        'field_label_8' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'FK Source Attribute',
+            ),
+          ),
+        ),
+        'field_label_9' => array(
+          'und' => array(
+            0 => array(
+              'value' => 'Controlled List',
+            ),
+          ),
+        ),
+        'entity' => entity_import('field_collection_item', '{
+          "item_id" : null,
+          "revision_id" : null,
+          "field_name" : "field_data_definitions_labels",
+          "default_revision" : true,
+          "archived" : false,
+          "field_label_1" : { "und" : [ { "value" : "Attribute Name" } ] },
+          "field_label_10" : { "und" : [] },
+          "field_label_11" : { "und" : [] },
+          "field_label_12" : { "und" : [] },
+          "field_label_13" : { "und" : [] },
+          "field_label_14" : { "und" : [] },
+          "field_label_15" : { "und" : [] },
+          "field_label_2" : { "und" : [ { "value" : "Attribute Definition" } ] },
+          "field_label_3" : { "und" : [ { "value" : "PK" } ] },
+          "field_label_4" : { "und" : [ { "value" : "FK" } ] },
+          "field_label_5" : { "und" : [ { "value" : "M" } ] },
+          "field_label_6" : { "und" : [ { "value" : "Datatype" } ] },
+          "field_label_7" : { "und" : [ { "value" : "FK Source Entity" } ] },
+          "field_label_8" : { "und" : [ { "value" : "FK Source Attribute" } ] },
+          "field_label_9" : { "und" : [ { "value" : "Controlled List" } ] }
+        }'),
+      ),
+    ),
     'deleted' => '0',
     'description' => '',
     'display' => array(
@@ -2392,7 +2522,7 @@ function isb_standard_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_data_definitions_labels',
     'label' => 'Data definitions labels',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -2468,7 +2598,7 @@ function isb_standard_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_data_definitions_values',
     'label' => 'Data definitions',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -2541,7 +2671,7 @@ function isb_standard_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_entity_name',
     'label' => 'Entity name',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'text_processing' => '0',
       'user_register_form' => FALSE,
@@ -2579,7 +2709,7 @@ function isb_standard_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_entity_type',
     'label' => 'Entity type',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -3031,7 +3161,7 @@ function isb_standard_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_controlled_list_labels',
     'label' => 'Controlled list labels',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -3075,7 +3205,7 @@ function isb_standard_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_controlled_list_values',
     'label' => 'Controlled list',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -3178,7 +3308,7 @@ The information it produces is subject to Crown copyright, which is administered
     'entity_type' => 'node',
     'field_name' => 'field_entities',
     'label' => 'Data definitions',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
