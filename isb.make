@@ -135,8 +135,11 @@ projects[imce][subdir] = "contrib"
 projects[facetapi][version] = "1.5"
 projects[facetapi][subdir] = "contrib"
 
-projects[search_facetapi][version] = "1.0-beta2"
-projects[search_facetapi][subdir] = "contrib"
+projects[search_api][version] = "1.13"
+projects[search_api][subdir] = "contrib"
+
+projects[search_api_db][version] = "1.4"
+projects[search_api_db][subdir] = "contrib"
 
 projects[faq][version] = "1.0-rc2"
 projects[faq][subdir] = "contrib"
