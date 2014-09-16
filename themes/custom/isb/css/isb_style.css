@@ -107,6 +107,53 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 5px;
 }
 
+#edit-search-api-views-fulltext {
+    border-radius: 5px 0 0 5px;
+    padding-right: 30%;
+    width: 70%;
+    height: 14px;
+}
+.views-exposed-form input {
+    border-radius: 5px;
+}
+
+.views-exposed-widgets {
+    position: relative;
+}
+
+.views-exposed-widgets .views-submit-button {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    padding: 0;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+    margin: 0;
+    height: 24px;
+    padding: 0 5px;
+}
+
+.views-exposed-widgets label {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    text-shadow: 0 1px 0 #fff;
+    font-size: 1.071em;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+#block-current-search-standard h1 {
+    margin-top: 0;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+body.page-standards .tabs {
+    display: none;
+}
+
+
 .field-label-inline .field-label {
     clear: both;
     float: left;
