@@ -231,20 +231,6 @@ function isb_standard_views_default_views() {
   $handler->display->display_options['sorts']['field_bda_version']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_bda_version']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_bda_version']['expose']['label'] = 'BDA Version';
-  /* Sort criterion: Indexed Node: Date changed */
-  $handler->display->display_options['sorts']['changed']['id'] = 'changed';
-  $handler->display->display_options['sorts']['changed']['table'] = 'search_api_index_standards_library';
-  $handler->display->display_options['sorts']['changed']['field'] = 'changed';
-  $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
-  $handler->display->display_options['sorts']['changed']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['changed']['expose']['label'] = 'Date changed';
-  /* Sort criterion: Indexed Node: Date created */
-  $handler->display->display_options['sorts']['created']['id'] = 'created';
-  $handler->display->display_options['sorts']['created']['table'] = 'search_api_index_standards_library';
-  $handler->display->display_options['sorts']['created']['field'] = 'created';
-  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  $handler->display->display_options['sorts']['created']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['created']['expose']['label'] = 'Date created';
   /* Sort criterion: Indexed Node: Standard Type */
   $handler->display->display_options['sorts']['field_standard_type']['id'] = 'field_standard_type';
   $handler->display->display_options['sorts']['field_standard_type']['table'] = 'search_api_index_standards_library';
@@ -257,26 +243,23 @@ function isb_standard_views_default_views() {
   $handler->display->display_options['sorts']['field_standard_status']['field'] = 'field_standard_status';
   $handler->display->display_options['sorts']['field_standard_status']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_standard_status']['expose']['label'] = 'Status';
-  /* Sort criterion: Indexed Node: Version */
-  $handler->display->display_options['sorts']['field_standard_version']['id'] = 'field_standard_version';
-  $handler->display->display_options['sorts']['field_standard_version']['table'] = 'search_api_index_standards_library';
-  $handler->display->display_options['sorts']['field_standard_version']['field'] = 'field_standard_version';
-  $handler->display->display_options['sorts']['field_standard_version']['order'] = 'DESC';
-  $handler->display->display_options['sorts']['field_standard_version']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['field_standard_version']['expose']['label'] = 'Version';
   /* Sort criterion: Search: Relevance */
   $handler->display->display_options['sorts']['search_api_relevance']['id'] = 'search_api_relevance';
   $handler->display->display_options['sorts']['search_api_relevance']['table'] = 'search_api_index_standards_library';
   $handler->display->display_options['sorts']['search_api_relevance']['field'] = 'search_api_relevance';
   $handler->display->display_options['sorts']['search_api_relevance']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['search_api_relevance']['expose']['label'] = 'Relevance';
+  /* Sort criterion: Indexed Node: Date changed */
+  $handler->display->display_options['sorts']['changed']['id'] = 'changed';
+  $handler->display->display_options['sorts']['changed']['table'] = 'search_api_index_standards_library';
+  $handler->display->display_options['sorts']['changed']['field'] = 'changed';
+  $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
   /* Filter criterion: Search: Fulltext search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_standards_library';
   $handler->display->display_options['filters']['search_api_views_fulltext']['field'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['exposed'] = TRUE;
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator_id'] = 'search_api_views_fulltext_op';
-  $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['label'] = 'Keywords';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['operator'] = 'search_api_views_fulltext_op';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['identifier'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['expose']['remember_roles'] = array(
@@ -287,6 +270,7 @@ function isb_standard_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['exposed_block'] = TRUE;
   $handler->display->display_options['path'] = 'standards';
   $export['standards_library'] = $view;

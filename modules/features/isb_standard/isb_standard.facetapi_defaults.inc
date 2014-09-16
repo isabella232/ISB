@@ -737,7 +737,7 @@ function isb_standard_facetapi_default_facet_settings() {
   $facet->searcher = 'search_api@standards_library';
   $facet->realm = 'block';
   $facet->facet = 'title';
-  $facet->enabled = FALSE;
+  $facet->enabled = TRUE;
   $facet->settings = array(
     'weight' => 0,
     'widget' => 'facetapi_links',
