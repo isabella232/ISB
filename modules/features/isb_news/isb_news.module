@@ -7,22 +7,17 @@
 include_once('isb_news.features.inc');
 
 /**
- * Implements hook_views_query_alter()
- *
- * Removes nids of nodes being listed in the featured news attachment
+ * Implements hook_views_post_execute().
  */
-function isb_news_views_query_alter(&$view, &$query) {
-  if ($view->name == 'news' && $view->current_display == 'page') {
-    $results = views_get_view_result('news', 'attachment_1');
-    $nids = array();
-    foreach ($results as $result) {
-      $nids[] = $result->nid;
+function isb_news_views_post_execute(&$view) {
+  if ($view->name == 'news' && $view->current_display == 'block_1') {
+    $breadcrumb[] = l('Home', '<front>');
+    if (!empty($view->exposed_input)) {
+      $breadcrumb[] = l('News', 'news');
     }
-    $query->where[0]['conditions'][] = array(
-      'field' => 'node.nid',
-      'value' => $nids,
-      'operator' => 'NOT IN',
-    );
-    drupal_add_css(drupal_get_path('module', 'isb_news') . '/isb_news.css');
+    else {
+      $breadcrumb[] = 'News';
+    }
+    drupal_set_breadcrumb($breadcrumb);
   }
 }
