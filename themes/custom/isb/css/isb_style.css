@@ -275,8 +275,12 @@ fieldset.captcha {
     border: none;
 }
 
+fieldset.captcha legend {
+    display: none;
+}
+
 fieldset.captcha,
-fieldset.captcha .form-wrapper {
+fieldset.captcha .fieldset-wrapper {
     margin: 0;
     padding: 0;
 }
@@ -285,6 +289,6 @@ fieldset.captcha .form-wrapper {
     padding: 1px;
 }
 
-#recaptcha_privacy {
+#recaptcha_privacy a {
     color: #aaa;
 }
