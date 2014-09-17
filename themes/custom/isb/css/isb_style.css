@@ -271,3 +271,20 @@ table tr td {
     margin-left: 10px;
 }
 
+fieldset.captcha {
+    border: none;
+}
+
+fieldset.captcha,
+fieldset.captcha .form-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+#recaptcha_response_field {
+    padding: 1px;
+}
+
+#recaptcha_privacy {
+    color: #aaa;
+}
