@@ -422,10 +422,28 @@ function theme_isb_standard_node_revisions($vars) {
   return $output;
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
 function isb_standard_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
   $form['submit']['#value'] = 'Search';
   $form['sort_by']['#weight'] = 100;
   $form['sort_order']['#weight'] = 101;
   $form['#attached']['js'][] = drupal_get_path('module', 'isb_standard') . '/js/views_exposed_form.js';
-$a=1;
+}
+
+/**
+ * Implements hook_views_post_execute().
+ */
+function isb_standard_views_post_execute(&$view) {
+  if ($view->name == 'standards_library' && $view->current_display == 'page') {
+    $breadcrumb[] = l('Home', '<front>');
+    if (!empty($view->exposed_input)) {
+      $breadcrumb[] = l('Standards Library', 'standards');
+    }
+    else {
+      $breadcrumb[] = 'Standards Library';
+    }
+    drupal_set_breadcrumb($breadcrumb);
+  }
 }
