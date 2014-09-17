@@ -146,3 +146,9 @@ projects[faq][subdir] = "contrib"
 
 projects[webform][version] = "4.0"
 projects[webform][subdir] = "contrib"
+
+projects[captcha][version] = "1.1"
+projects[captcha][subdir] = "contrib"
+
+projects[recaptcha][version] = "1.11"
+projects[recaptcha][subdir] = "contrib"
