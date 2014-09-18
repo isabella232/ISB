@@ -233,7 +233,9 @@ function isb_standard_preprocess_node(&$variables) {
  * Implements hook_form_FORM_ID_alter().
  */
 function isb_standard_form_standard_node_form_alter(&$form, &$form_state, $form_id) {
-  $form['#attached']['css'][] = drupal_get_path('module', 'isb_standard') . '/css/standard_node_add_form.css';
+  $path = drupal_get_path('module', 'isb_standard');
+  $form['#attached']['css'][] = $path . '/css/standard_node_add_form.css';
+  $form['#attached']['js'][] = $path . '/js/standard_node_add_form.js';
 }
 
 /**
