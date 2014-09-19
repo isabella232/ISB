@@ -101,6 +101,8 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+/* standards library search facets */
+
 .views-field-search-api-excerpt {
     clear: both;
     border-top: 1px dotted #aaa;
@@ -141,6 +143,37 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.071em;
     font-weight: normal;
     line-height: 1.2;
+}
+
+@media (max-width: 850px) and (min-width: 590px) {
+    .views-exposed-widgets .views-submit-button {
+        top: 8px;
+        left: 190px;
+    }
+    #edit-search-api-views-fulltext {
+        width: 135px;
+    }
+
+    .views-exposed-form .views-widget-sort-by,
+    .views-exposed-form .views-widget-sort-order {
+        float: right;
+    }
+}
+
+@media (max-width: 710px) and (min-width: 460px) {
+    .views-exposed-widgets .views-submit-button {
+        top: 7px;
+    }
+}
+
+@media (max-width: 590px) {
+    #edit-search-api-views-fulltext-wrapper {
+        width: 90%;
+    }
+
+    .views-exposed-form .views-widget-sort-by {
+        clear: both;
+    }
 }
 
 #block-current-search-standard h1 {
@@ -270,6 +303,8 @@ table tr td {
 .content .field-name-field-entity-name {
     margin-left: 10px;
 }
+
+/* captcha */
 
 fieldset.captcha {
     border: none;
