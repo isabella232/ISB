@@ -83,7 +83,8 @@ function isb_search_default_search_api_server() {
           "title" : {
             "table" : "search_api_db_standards_library_text",
             "type" : "text",
-            "boost" : "2.0"
+            "boost" : "5.0",
+            "column" : "title"
           },
           "field_controlled_list_labels" : {
             "table" : "search_api_db_standards_library",
@@ -197,6 +198,17 @@ function isb_search_default_search_api_server() {
             "column" : "author",
             "type" : "integer",
             "boost" : "1.0"
+          },
+          "url" : {
+            "table" : "search_api_db_standards_library",
+            "column" : "url",
+            "type" : "string",
+            "boost" : "1.0"
+          },
+          "search_api_aggregation_1" : {
+            "table" : "search_api_db_standards_library_text",
+            "type" : "text",
+            "boost" : "3.0"
           }
         }
       }
