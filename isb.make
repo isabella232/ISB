@@ -80,6 +80,7 @@ projects[field_collection][patch][] = "http://drupal.org/files/issues/field_coll
 projects[field_collection_table][version] = "1.0-beta1"
 projects[field_collection_table][subdir] = "contrib"
 projects[field_collection_table][patch][] = "http://www.drupal.org/files/field_collection_table-1815496-2-fix_malformed_table.patch"
+projects[field_collection_table][patch][] = "http://www.drupal.org/files/issues/field_collection_table-recurse_form-1438266-24.patch"
 
 projects[lexicon][version] = "1.10"
 projects[lexicon][subdir] = "contrib"
