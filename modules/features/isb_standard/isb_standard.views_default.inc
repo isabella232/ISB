@@ -91,6 +91,17 @@ function isb_standard_views_default_views() {
   $handler->display->display_options['fields']['search_api_excerpt']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['search_api_excerpt']['empty'] = '[field_introduction]';
   $handler->display->display_options['fields']['search_api_excerpt']['link_to_entity'] = 0;
+  /* Sort criterion: Indexed Node: URL */
+  $handler->display->display_options['sorts']['url']['id'] = 'url';
+  $handler->display->display_options['sorts']['url']['table'] = 'search_api_index_standards_library';
+  $handler->display->display_options['sorts']['url']['field'] = 'url';
+  /* Sort criterion: Search: Relevance */
+  $handler->display->display_options['sorts']['search_api_relevance']['id'] = 'search_api_relevance';
+  $handler->display->display_options['sorts']['search_api_relevance']['table'] = 'search_api_index_standards_library';
+  $handler->display->display_options['sorts']['search_api_relevance']['field'] = 'search_api_relevance';
+  $handler->display->display_options['sorts']['search_api_relevance']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['search_api_relevance']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['search_api_relevance']['expose']['label'] = 'Relevance';
   /* Sort criterion: Indexed Node: BDA Version */
   $handler->display->display_options['sorts']['field_bda_version']['id'] = 'field_bda_version';
   $handler->display->display_options['sorts']['field_bda_version']['table'] = 'search_api_index_standards_library';
@@ -110,17 +121,6 @@ function isb_standard_views_default_views() {
   $handler->display->display_options['sorts']['field_standard_status']['field'] = 'field_standard_status';
   $handler->display->display_options['sorts']['field_standard_status']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_standard_status']['expose']['label'] = 'Status';
-  /* Sort criterion: Search: Relevance */
-  $handler->display->display_options['sorts']['search_api_relevance']['id'] = 'search_api_relevance';
-  $handler->display->display_options['sorts']['search_api_relevance']['table'] = 'search_api_index_standards_library';
-  $handler->display->display_options['sorts']['search_api_relevance']['field'] = 'search_api_relevance';
-  $handler->display->display_options['sorts']['search_api_relevance']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['search_api_relevance']['expose']['label'] = 'Relevance';
-  /* Sort criterion: Indexed Node: Date changed */
-  $handler->display->display_options['sorts']['changed']['id'] = 'changed';
-  $handler->display->display_options['sorts']['changed']['table'] = 'search_api_index_standards_library';
-  $handler->display->display_options['sorts']['changed']['field'] = 'changed';
-  $handler->display->display_options['sorts']['changed']['order'] = 'DESC';
   /* Filter criterion: Search: Fulltext search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_standards_library';

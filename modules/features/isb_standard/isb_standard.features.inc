@@ -86,8 +86,10 @@ function isb_standard_default_search_api_index() {
         "field_standard_status" : { "type" : "integer" },
         "field_standard_type" : { "type" : "string" },
         "field_standard_version" : { "type" : "decimal" },
+        "search_api_aggregation_1" : { "type" : "text", "boost" : "3.0" },
         "search_api_language" : { "type" : "string" },
-        "title" : { "type" : "text", "boost" : "2.0" }
+        "title" : { "type" : "text", "boost" : "5.0" },
+        "url" : { "type" : "string" }
       },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {
@@ -100,7 +102,29 @@ function isb_standard_default_search_api_index() {
         "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } },
         "search_api_alter_add_viewed_entity" : { "status" : 0, "weight" : "0", "settings" : { "mode" : "full" } },
         "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] },
-        "search_api_alter_add_aggregation" : { "status" : 0, "weight" : "0", "settings" : [] }
+        "search_api_alter_add_aggregation" : {
+          "status" : 1,
+          "weight" : "0",
+          "settings" : { "fields" : { "search_api_aggregation_1" : {
+                "name" : "Title - Fulltext",
+                "type" : "fulltext",
+                "fields" : [
+                  "title",
+                  "field_standard_identifier",
+                  "field_standard_type",
+                  "field_bda_version",
+                  "body:value",
+                  "field_annexes:value",
+                  "field_changes_previous_version:value",
+                  "field_introduction:value",
+                  "field_notes:value",
+                  "field_references:value"
+                ],
+                "description" : "A Fulltext aggregation of the following fields: Title, Standard identifier, Standard Type, BDA Version, The main body text \\u00bb Text, Annexes \\u00bb Text, Changes from previous version \\u00bb Text, Introduction \\u00bb Text, Notes \\u00bb Text, References \\u00bb Text."
+              }
+            }
+          }
+        }
       },
       "processors" : {
         "search_api_case_ignore" : {
@@ -122,7 +146,7 @@ function isb_standard_default_search_api_index() {
           "status" : 1,
           "weight" : "20",
           "settings" : {
-            "fields" : { "title" : true, "field_standard_identifier" : true },
+            "fields" : { "field_standard_identifier" : true },
             "spaces" : "[^[:alnum:]]",
             "ignorable" : "[\\u0027]"
           }
