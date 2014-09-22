@@ -24,6 +24,7 @@ function isb_news_user_default_permissions() {
     'name' => 'delete any news content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
@@ -42,6 +43,7 @@ function isb_news_user_default_permissions() {
     'name' => 'edit any news content',
     'roles' => array(
       'administrator' => 'administrator',
+      'editor' => 'editor',
     ),
     'module' => 'node',
   );
