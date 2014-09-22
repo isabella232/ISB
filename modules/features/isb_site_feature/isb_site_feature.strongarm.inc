@@ -21,7 +21,7 @@ function isb_site_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'comment_page';
-  $strongarm->value = 0;
+  $strongarm->value = '0';
   $export['comment_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -195,7 +195,7 @@ function isb_site_feature_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_page';
-  $strongarm->value = FALSE;
+  $strongarm->value = 0;
   $export['node_submitted_page'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -248,7 +248,7 @@ function isb_site_feature_strongarm() {
     'toggle_main_menu' => 1,
     'toggle_secondary_menu' => 1,
     'default_logo' => 0,
-    'logo_path' => 'profiles/isb/themes/custom/isb/images/isb-header-logo3.gif',
+    'logo_path' => 'profiles/isb/themes/custom/isb/images/isb_logo_transparent.png',
     'logo_upload' => '',
     'default_favicon' => 1,
     'favicon_path' => '',
