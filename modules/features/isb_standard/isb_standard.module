@@ -35,7 +35,7 @@ function isb_standard_menu() {
     'title callback' => 'isb_standard_title',
     'title arguments' => array('tds', 1,3),
     'page callback' => 'isb_standard_version_view',
-    'page arguments' => array('cl', 1,3),
+    'page arguments' => array('tds', 1,3),
     'access callback' => TRUE,
   );
   return $items;
