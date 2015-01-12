@@ -151,3 +151,6 @@ projects[captcha][subdir] = "contrib"
 
 projects[recaptcha][version] = "1.11"
 projects[recaptcha][subdir] = "contrib"
+
+projects[imagefield_crop][version] = "1.1"
+projects[imagefield_crop][subdir] = "contrib"
