@@ -67,9 +67,6 @@ projects[field_permissions][subdir] = "contrib"
 projects[field_group][version] = "1.1"
 projects[field_group][subdir] = "contrib"
 
-projects[field_collection][version] = "1.0-beta7"
-projects[field_collection][subdir] = "contrib"
-
 projects[field_collection][type] = "module"
 projects[field_collection][download][type] = "git"
 projects[field_collection][download][url] = "http://git.drupal.org/project/field_collection.git"
