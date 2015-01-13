@@ -333,6 +333,14 @@ fieldset.captcha .fieldset-wrapper {
     border: none;
 }
 
+.profile .field-name-field-avatar .field-item {
+    background: #ddd;
+}
+
+.profile .field-name-field-avatar .field-item img {
+    margin: 0;
+}
+
 .profile .user-info-right {
     padding-left: 120px;
 }
