@@ -327,3 +327,20 @@ fieldset.captcha .fieldset-wrapper {
 #recaptcha_privacy a {
     color: #aaa;
 }
+
+.profile .field-name-field-avatar {
+    float: left;
+    border: none;
+}
+
+.profile .user-info-right {
+    padding-left: 120px;
+}
+
+.profile .member-for {
+    margin: 5px 0;
+}
+
+.profile h3 {
+    border: none;
+}
