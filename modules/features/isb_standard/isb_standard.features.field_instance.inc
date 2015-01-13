@@ -3218,64 +3218,6 @@ function isb_standard_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-standard-field_copyright_statement'
-  $field_instances['node-standard-field_copyright_statement'] = array(
-    'bundle' => 'standard',
-    'default_value' => array(
-      0 => array(
-        'value' => '<p><a href="https://www.gov.uk/help/terms-conditions">© Crown copyright 2012</a> &nbsp;<br />
-The Information Standards Board (ISB) is an advisory body to the Department for Education (DfE) and the Department for Business, Innovation and Skills (BIS).<br />
-The information it produces is subject to Crown copyright, which is administered by the National Archives.</p>
-
-<p>The Crown copyright protected information in this standard (other than ISB or Departmental logos) may be reproduced free of charge in any format or medium under the terms of the Open Government Licence, available from the National Archives website.</p>
-
-<p>Any reuse is subject to the material being reproduced accurately and not used in a misleading context. It must be acknowledged as being protected by Crown copyright and the title of the source material must be supplied with the ISB named as the corporate author.</p>
-
-<p>Authorisation to reproduce any information in this standard which is identified as being the copyright of a third party must be obtained from the copyright holders concerned.</p>
-',
-        'format' => 'filtered_html',
-      ),
-    ),
-    'deleted' => '0',
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'edit' => array(
-            'editor' => 'plain_text',
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => '19',
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_copyright_statement',
-    'label' => 'Copyright statement',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => '1',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => '3',
-      ),
-      'type' => 'text_textarea',
-      'weight' => '22',
-    ),
-  );
-
   // Exported field_instance: 'node-standard-field_entities'
   $field_instances['node-standard-field_entities'] = array(
     'bundle' => 'standard',
@@ -3843,7 +3785,6 @@ The information it produces is subject to Crown copyright, which is administered
   t('Controlled list');
   t('Controlled list description');
   t('Controlled list labels');
-  t('Copyright statement');
   t('Data definitions');
   t('Data definitions labels');
   t('Date of Standard');
