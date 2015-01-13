@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * Code for the ISB User feature.
+ */
+
+include_once 'isb_user.features.inc';
+
+/**
+ *  Implements hook_preprocess_user_profile().
+ */
+function isb_user_preprocess_user_profile(&$variables) {
+  $variables['full_name'] = isset($variables['field_first_name'][0]['safe_value']) ? $variables['field_first_name'][0]['safe_value'] : FALSE;
+
+  if (isset($variables['field_surname'][0]['safe_value'])) {
+    if (isset($variables['full_name'])) {
+      $variables['full_name'] = $variables['full_name'] . ' ' . $variables['field_surname'][0]['safe_value'];
+    }
+    else {
+      $variables['full_name'] = $variables['field_surname'][0]['safe_value'];
+    }
+  }
+
+  $variables['bio'] = isset($variables['field_bio'][0]['safe_value']) ? $variables['field_bio'][0]['safe_value'] : FALSE;
+  $variables['job_title'] = isset($variables['field_job_title'][0]['safe_value']) ? $variables['field_job_title'][0]['safe_value'] : FALSE;
+  $variables['member_for'] =  $variables['user_profile']['summary']['member_for']['#title'] . ' ' . $variables['user_profile']['summary']['member_for']['#markup'];
+}
