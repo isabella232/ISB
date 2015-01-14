@@ -103,15 +103,6 @@
       print render($content);
     ?>
 
-
-    <div><p><a href="https://www.gov.uk/help/terms-conditions">© Crown copyright 2012</a><br>
-        The Information Standards Board (ISB) is an advisory body to the Department for Education (DfE) and the Department for Business, Innovation and Skills (BIS).<br>
-        The information it produces is subject to Crown copyright, which is administered by the National Archives.</p>
-      <p>The Crown copyright protected information in this standard (other than ISB or Departmental logos) may be reproduced free of charge in any format or medium under the terms of the Open Government Licence, available from the National Archives website.</p>
-      <p>Any reuse is subject to the material being reproduced accurately and not used in a misleading context. It must be acknowledged as being protected by Crown copyright and the title of the source material must be supplied with the ISB named as the corporate author.</p>
-      <p>Authorisation to reproduce any information in this standard which is identified as being the copyright of a third party must be obtained from the copyright holders concerned.</p>
-  </div>
-
   <?php
     // Remove the "Add new comment" link on the teaser page or if the comment
     // form is being displayed on the same page.
@@ -130,3 +121,7 @@
   <?php print render($content['comments']); ?>
 
 </article>
+
+<div class="copyright">
+  <a href="https://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown copyright</a>
+</div>

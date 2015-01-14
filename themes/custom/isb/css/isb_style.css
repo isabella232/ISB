@@ -352,3 +352,16 @@ fieldset.captcha .fieldset-wrapper {
 .profile h3 {
     border: none;
 }
+
+.copyright {
+    text-align: right;
+}
+
+.copyright a {
+    width: 125px;
+    display: inline-block;
+    background: url(../images/crown_copyright.png) no-repeat;
+    text-align: center;
+    text-decoration: none;
+    padding: 115px 0 0 0;
+}
