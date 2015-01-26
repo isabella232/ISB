@@ -22,6 +22,7 @@ projects[isb][download][branch] = "master"
 projects[spark][type] = "profile"
 projects[spark][download][type] = "git"
 projects[spark][download][tag] = "7.x-1.0-beta1"
+projects[spark][patch][] = "http://www.drupal.org/files/issues/spark_security_updates.patch"
 
 
 ; Download Shiny administration theme
@@ -89,7 +90,7 @@ projects[stringoverrides][subdir] = "contrib"
 projects[fieldable_panels_panes][version] = "1.5"
 projects[fieldable_panels_panes][subdir] = "contrib"
 
-projects[context][version] = "3.2"
+projects[context][version] = "3.6"
 projects[context][subdir] = "contrib"
 
 projects[redirect][version] = "1.0-rc1"
