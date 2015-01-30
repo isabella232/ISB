@@ -121,7 +121,3 @@
   <?php print render($content['comments']); ?>
 
 </article>
-
-<div class="copyright">
-  <a href="https://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown copyright</a>
-</div>

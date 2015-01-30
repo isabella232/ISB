@@ -240,6 +240,9 @@
       </footer> <!-- /#footer -->
     <?php endif; ?>
 
+    <div class="copyright">
+      <a href="https://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">© Crown copyright</a>
+    </div>
   </div></div> <!-- /.section, /#footer-wrapper -->
 
 </div></div> <!-- /#page, /#page-wrapper -->
