@@ -37,6 +37,16 @@ function isb_site_feature_block_view($delta='') {
   return $block;
 }
 
+
+/**
+ * Implements hook_node_view_alter().
+ */
+function isb_site_feature_node_view_alter(&$build) {
+  if(isset($build['book_navigation'])) {
+    unset($build['book_navigation']);
+  }
+}
+
 /**
  * Implements hook_default_panels_layout().
  */
